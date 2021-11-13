@@ -24,12 +24,14 @@ social-network-links:
   twitter: g_giase
   linkedin: ggiasemidis
   instagram: g.giase
+  google-scholar: https://scholar.google.co.uk/citations?user=vVyWiE8AAAAJ&hl=en
  
  # Select which social network share links to show in posts
 share-links-active:
   gihub: true
   twitter: true
   linkedin: true
+  google-scholar: true
   instagram: false
   
 # Ruby Date Format to show dates of posts
