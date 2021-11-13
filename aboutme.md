@@ -1,4 +1,4 @@
-I am a senior data scientist at [Choreograph](https://www.choreograph.com/) (former [Sandatable](https://www.sandtable.com)), focusing on Agent Based Modelling (ABM) simulations.
+I am a senior data scientist at [Choreograph](https://www.choreograph.com/) (former [Sandtable](https://www.sandtable.com)), focusing on Agent Based Modelling (ABM) simulations.
 
 Prior to this role, I was a senior data scientist at [CountingLab](https://www.countinglabs.co.uk/) and visiting researcher at [Centre for Mathematics of Human Behaviour](https://www.reading.ac.uk/cmohb/) at the University of Reading, UK.
 
