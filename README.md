@@ -8,4 +8,6 @@ My background is in theoretical physics
 
 # Basketball Analytics
 
+# Publications
+
 # Contact
