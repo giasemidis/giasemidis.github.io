@@ -1,3 +1,34 @@
 theme: jekyll-theme-minimal
 title: Georgios Giasemidis' homepage
+author: Georgios Giasemidis
 description: My personal web-space, keep an eye for updates
+
+navbar-links:
+  About Me: "aboutme"
+  Resources:
+    - Beautiful Jekyll: "https://beautifuljekyll.com"
+    - Learn markdown: "https://www.markdowntutorial.com/"
+  Author's home: "https://giasemidis.github.io/"
+  
+avatar: photos/lego-scientist.jpg
+round-avatar: True
+
+title-img: photos/my-photo-at-the-office-blurred.png
+
+# --- Footer social media links --- #
+social-network-links:
+  email: g.giasemidis@gmail.com
+  github: giasemidis
+  twitter: g_giase
+  linkedin: ggiasemidis
+  instagram: g.giase
+ 
+ # Select which social network share links to show in posts
+share-links-active:
+  gihub: true
+  twitter: true
+  linkedin: true
+  instagram: false
+  
+# Ruby Date Format to show dates of posts
+date_format: "%B %-d, %Y"
