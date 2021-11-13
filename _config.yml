@@ -22,10 +22,11 @@ title-img: photos/my-photo-at-the-office-blurred.png
 social-network-links:
   email: g.giasemidis@gmail.com
   github: giasemidis
-  twitter: g_giase
   linkedin: ggiasemidis
-  instagram: g.giase
   google-scholar: citations?user=vVyWiE8AAAAJ
+  twitter: g_giase
+  instagram: g.giase
+  youtube: channel/UCr7vIbsZST1LoOfx736iiGg
  
  # Select which social network share links to show in posts
 share-links-active:
@@ -34,6 +35,7 @@ share-links-active:
   linkedin: true
   google-scholar: true
   instagram: false
+  youtube: true
   
 # Ruby Date Format to show dates of posts
 date_format: "%B %-d, %Y"
