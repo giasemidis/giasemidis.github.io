@@ -7,12 +7,14 @@ remote_theme: daattali/beautiful-jekyll
 
 navbar-links:
   About Me: "aboutme"
+  CV:
+    - https://giasemidis.github.io/docs/GGiasemidis-CV.pdf
   Medium Articles:
     - Euroleague shot charts: "https://g-giasemidis.medium.com/create-euroleague-shot-charts-in-python-7ba4aa574644"
     - ESPN NBA Fantasy: "https://g-giasemidis.medium.com/nba-fantasy-analytics-with-python-on-epsn-f03f10a60187"
   Publications: "publications"
 #   Author's home: "https://giasemidis.github.io/"
-  
+
 avatar: photos/lego-scientist.jpg
 round-avatar: True
 
@@ -27,7 +29,7 @@ social-network-links:
   twitter: g_giase
   instagram: g.giase
   youtube: channel/UCr7vIbsZST1LoOfx736iiGg
- 
+
  # Select which social network share links to show in posts
 share-links-active:
   gihub: true
@@ -36,7 +38,7 @@ share-links-active:
   google-scholar: true
   instagram: false
   youtube: true
- 
+
  # Excerpt word length - Truncate the excerpt of each post on the feed page to the specified number of words
 excerpt_length: 50
 
@@ -48,7 +50,7 @@ feed_show_tags: true
 
 # Add a search button to the navbar
 post_search: true
-  
+
 # Ruby Date Format to show dates of posts
 date_format: "%B %-d, %Y"
 
@@ -62,7 +64,7 @@ date_format: "%B %-d, %Y"
 #   - README.md
 #   - screenshot.png
 #   - docs/
- 
+
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
