@@ -59,7 +59,7 @@ Pre-print versions can be found on [arxiv.org](https://arxiv.org/search/?searcht
 ## Image Processing
 
   * *Authors*: Noeleene Mallia-Parfitt and Georgios Giasemidis.  
-    *Title*: Graph clustering and variational image segmentation for automated firearm detection in X-ray images.  
+    *Title*: Graph clustering and variational image segmentation for automated firearm detection in X-ray images.  
     *Published in*: IET Image Processing, 13:1105–1114(9), May 2019. ISSN 1751-9659. [URL](https://digital-library.theiet.org/content/journals/10.1049/iet-ipr.2018.5198)
 
 ## Basketball
