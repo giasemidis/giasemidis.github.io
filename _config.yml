@@ -22,10 +22,11 @@ title-img: photos/my-photo-at-the-office-blurred.png
 social-network-links:
   email: g.giasemidis@gmail.com
   github: giasemidis
-  twitter: g_giase
   linkedin: ggiasemidis
-  instagram: g.giase
   google-scholar: citations?user=vVyWiE8AAAAJ
+  twitter: g_giase
+  instagram: g.giase
+  youtube: channel/UCr7vIbsZST1LoOfx736iiGg
  
  # Select which social network share links to show in posts
 share-links-active:
@@ -34,6 +35,34 @@ share-links-active:
   linkedin: true
   google-scholar: true
   instagram: false
+  youtube: true
+ 
+ # Excerpt word length - Truncate the excerpt of each post on the feed page to the specified number of words
+excerpt_length: 50
+
+# Whether or not to show an excerpt for every blog post in the feed page
+feed_show_excerpt: true
+
+# Whether or not to show a list of tags below each post preview in the feed page
+feed_show_tags: true
+
+# Add a search button to the navbar
+post_search: true
   
 # Ruby Date Format to show dates of posts
 date_format: "%B %-d, %Y"
+
+# Exclude these files from production site
+# exclude:
+#   - CHANGELOG.md
+#   - CNAME
+#   - Gemfile
+#   - Gemfile.lock
+#   - LICENSE
+#   - README.md
+#   - screenshot.png
+#   - docs/
+ 
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap

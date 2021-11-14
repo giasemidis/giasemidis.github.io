@@ -1,13 +1,1 @@
-# Introduction
-I am data scientist.
-
-# Background
-My background is in theoretical physics
-
-# Interests
-
-# Basketball Analytics
-
-# Publications
-
-# Contact
+Hey, welcome to my personal page. Browse around for personal details, blog posts and publications.
