@@ -19,7 +19,7 @@ Pre-print versions can be found on [arxiv.org](https://arxiv.org/search/?searcht
 
   * *Authors*: Stephen Haben and Georgios Giasemidis.  
     *Title*: Distribution network demand and its uncertainty.  
-    *Published in*: In Ali Arefi, Farhad Shahnia, and Gerard Ledwich, editors, Electric Distribution Network Management and Control, pages 59–84. Springer Singapore, Singapore, 2018. ISBN 978-981-10-7001-3. [URL](https://doi.org/10.1007/978-981-10-7001-3_3)
+    *Published in*: In Ali Arefi, Farhad Shahnia, and Gerard Ledwich, editors, Electric Distribution Network Management and Control, pages 59–84. Springer Singapore, Singapore, 2018. ISBN 978-981-10-7001-3. [URL](https://doi.org/10.1007/978-981-10-7001-3_3)
 
   * *Authors*: Timur Yunusov, Georgios Giasemidis, and Stephen Haben.  
     *Title*: Smart storage scheduling and forecasting for peak reduction on low-voltage feeders.  
@@ -49,7 +49,7 @@ Pre-print versions can be found on [arxiv.org](https://arxiv.org/search/?searcht
 
 ## Rumour Detection
   * *Authors*: Georgios Giasemidis, Nikolaos Kaplis, Ioannis Agrafiotis, and Jason R. C Nurse.  
-    *Title*: A semi-supervised approach to message stance classication.  
+    *Title*: A semi-supervised approach to message stance classification.  
     *Published in*: IEEE Transactions on Knowledge and Data Engineering, 32(1): 1–11, 2020. ISSN 1041-4347. [URL](https://ieeexplore.ieee.org/document/8528884)
 
   * *Authors*: Georgios Giasemidis, Colin Singleton, Ioannis Agrafiotis, Jason R. C. Nurse, Alan Pilgrim, Chris Willis, and Danica Vukadinovic Greetham.  
@@ -59,7 +59,7 @@ Pre-print versions can be found on [arxiv.org](https://arxiv.org/search/?searcht
 ## Image Processing
 
   * *Authors*: Noeleene Mallia-Parfitt and Georgios Giasemidis.  
-    *Title*: Graph clustering and variational image segmentation for automatedrearm detection in x-ray images.  
+    *Title*: Graph clustering and variational image segmentation for automated firearm detection in X-ray images.  
     *Published in*: IET Image Processing, 13:1105–1114(9), May 2019. ISSN 1751-9659. [URL](https://digital-library.theiet.org/content/journals/10.1049/iet-ipr.2018.5198)
 
 ## Basketball
