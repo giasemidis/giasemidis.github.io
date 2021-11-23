@@ -9,6 +9,7 @@ navbar-links:
   About Me: "aboutme"
   CV: "https://giasemidis.github.io/docs/GGiasemidis-CV.pdf"
   Medium Articles:
+    - LV forecasting literature review: "https://g-giasemidis.medium.com/lessons-from-a-review-of-low-voltage-load-forecasting-methods-1379627e8f0c"
     - Euroleague shot charts: "https://g-giasemidis.medium.com/create-euroleague-shot-charts-in-python-7ba4aa574644"
     - ESPN NBA Fantasy: "https://g-giasemidis.medium.com/nba-fantasy-analytics-with-python-on-epsn-f03f10a60187"
   Publications: "publications"
