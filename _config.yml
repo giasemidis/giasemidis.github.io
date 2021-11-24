@@ -32,12 +32,11 @@ social-network-links:
 
  # Select which social network share links to show in posts
 share-links-active:
-  gihub: true
   twitter: true
+  facebook: true
   linkedin: true
-  google-scholar: true
-  instagram: false
-  youtube: true
+  instagram: true
+  vk: true
 
  # Excerpt word length - Truncate the excerpt of each post on the feed page to the specified number of words
 excerpt_length: 50
