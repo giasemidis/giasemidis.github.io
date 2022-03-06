@@ -7,6 +7,7 @@ remote_theme: daattali/beautiful-jekyll
 
 navbar-links:
   About Me: "aboutme"
+  Author's home: "https://giasemidis.github.io/"
   CV: "https://giasemidis.github.io/docs/GGiasemidis-CV.pdf"
   Publications: "publications"
   Medium Articles:
@@ -14,7 +15,6 @@ navbar-links:
     - Euroleague shot charts: "https://g-giasemidis.medium.com/create-euroleague-shot-charts-in-python-7ba4aa574644"
     - ESPN NBA Fantasy: "https://g-giasemidis.medium.com/nba-fantasy-analytics-with-python-on-epsn-f03f10a60187"
   ESPN Fantasy APP: "https://espn-nba-fantasy.herokuapp.com/"
-#   Author's home: "https://giasemidis.github.io/"
 
 avatar: photos/lego-scientist.jpg
 round-avatar: True
@@ -25,6 +25,7 @@ title-img: photos/my-photo-at-the-office-blurred.png
 social-network-links:
   email: g.giasemidis@gmail.com
   github: giasemidis
+  medium: g-giasemidis
   linkedin: ggiasemidis
   google-scholar: citations?user=vVyWiE8AAAAJ
   twitter: g_giase
