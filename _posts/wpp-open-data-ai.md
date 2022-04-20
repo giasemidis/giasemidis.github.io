@@ -1,4 +1,11 @@
-# An ABM presentation at WPP Open
+---
+layout: post
+title: An ABM presentation at WPP Open
+subtitle: An artistic visualisation of an ABM talk
+tags: [abm,agentbasedmodelling,ai,data,covid,visualisation,artwork]
+readtime: true
+social-share: true
+---
 
 I was invited to give a presentation at the WPP Open Data & AI session about a recent project I worked for ([WPP](https://www.wpp.com/) is the mother company of [Choreograph](https://www.choreograph.com/), the company I work for).
 
@@ -8,6 +15,6 @@ Unfortunately I can't share more about the details of the model because the mode
 
 A nice output from the presentation is this cool art-work created by [Scriberia](https://www.scriberia.com/) summarising the key concepts of the talk.
 
-![scriberia art-work](https://raw.githubusercontent.com/giasemidis/giasemidis.github.io/master/_posts/figures/Strategy-Simulations.png)
+![scriberia art-work](https://raw.githubusercontent.com/giasemidis/giasemidis.github.io/master/_posts/figures/Strategy-Simulations.jpg)
 
 Hope you enjoy it.
