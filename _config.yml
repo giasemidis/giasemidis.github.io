@@ -60,9 +60,9 @@ post_search: true
 #giscus:
 hostname: giscus.app # Replace with your giscus instance's hostname if self-hosting
 repository: giasemidis/giasemidis.github.io # GitHub username/repository eg. "daattali/beautiful-jekyll"
-repository-id: "MDEwOlJlcG9zaXRvcnkzMTk0NTk2MDk=" # ID of your repository, retrieve this info from https://giscus.app
-category: "Q&A" # Category name of your GitHub Discussion posts
-category-id: "DIC_kwDOEwqRGc4CPOI5" # ID of your category, retrieve this info from https://giscus.app
+repository-id: MDEwOlJlcG9zaXRvcnkzMTk0NTk2MDk= # ID of your repository, retrieve this info from https://giscus.app
+category: Q&A # Category name of your GitHub Discussion posts
+category-id: DIC_kwDOEwqRGc4CPOI5 # ID of your category, retrieve this info from https://giscus.app
 mapping: pathname
 reactions-enabled: 1
 emit-metadata: 0
@@ -84,22 +84,6 @@ input-position: bottom
 
 # Ruby Date Format to show dates of posts
 date_format: "%B %-d, %Y"
-
-# Default YAML values (more information on Jekyll's site)
-# defaults:
-#   -
-#     scope:
-#       path: ""
-#       type: "posts"
-#     values:
-#       layout: "post"
-#       comments: true  # add comments to all blog posts
-#       social-share: true # add social media sharing buttons to all blog posts
-#   -
-#     scope:
-#       path: "" # any file that's not a post will be a "page" layout by default
-#     values:
-#       layout: "page"
 
 # Default YAML values (more information on Jekyll's site)
 defaults:
