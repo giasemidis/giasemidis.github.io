@@ -67,6 +67,8 @@ mapping: pathname
 reactions-enabled: 1
 emit-metadata: 0
 theme: light
+lang: en
+input-position: bottom
 
 # data-repo="giasemidis/giasemidis.github.io"
 # data-repo-id="MDEwOlJlcG9zaXRvcnkzMTk0NTk2MDk="
