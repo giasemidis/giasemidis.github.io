@@ -11,14 +11,14 @@ As a member of the [WPP](https://www.wpp.com/) Open Data & AI community, I was a
 
 Then a couple of days later I revisited the documentation of an old model. It wasn't very detailed. I was mad at myself, I thought "this is such a bad habit of mine. I need to make better documentation". And then it clicked, I decided to talk about *good and bad habits and practices in data science*. Admittedly, we all have both, so that's a great topic for discussion and sharing our experiences.
 
-I started making a list of points, but soon the list expanded to about 20 points. I shared my list with a couple of colleagues who added even more useful ideas. The list is split into two sections, general practices and technical. Here, I am documenting all the points from my initial list, my colleagues' suggestions and the community's comments and experiences during the session. I hope you enjoy it and find it useful.
+I started making a list of points, but soon the list expanded to about 20 points. I shared my list with a couple of colleagues who added even more useful ideas.  Here, I am documenting all the points from my initial list, my colleagues' suggestions and the community's comments and experiences during the session. The list is split into two sections, general practices and technical. I hope you enjoy it and find it useful.
 
 ## General Practices
 
 * *Sharing* is caring. Sharing knowledge is a great habit for data science teams. Share a new tool, a new method or a new trick you learnt. This can be done in so many ways:
   - Write a "how-to" article
   - Use tools that allow collaboration, e.g. [GitHub](https://github.com/)/[GitLab](https://gitlab.com/), [Confluence](https://www.atlassian.com/software/confluence), shared cloud drives
-  - Don’t be afraid to get exposed and set code-reviewing processes. From my experience, I learn most of tools and tricks through the review process (either reviewing others' code or by suggestions when my code is reviewed).
+  - Don’t be afraid to get exposed and set code-reviewing processes. From my experience, I learn most of tools and tricks through the code-review process (either reviewing others' code or by suggestions when my code is reviewed).
   - Do not reinvent the wheel. If a colleague has written a function or a method, ask and use it.
   - Similarly, be kind and share your work, the favour will be returned.
   - Share beyond your team with the wider company or community (e.g. through blog updates). An interesting point was raised during the discussion; about sharing sensitive client knowledge and information. This should not be overlooked and permissions should be asked before sharing sensitive information.
@@ -41,23 +41,25 @@ I started making a list of points, but soon the list expanded to about 20 points
   - It helps others to understand your work and follow up on it, see for first point.
   - It helps you to revisit a problem later on (been there several times!)
   - If a project has a tight deadline, spend some time just after the deadline for documentation.
-  - Another interesting point was brought up during the session about documenting for technical and non-technical teams. This is such an important point. Successful documentation should to be read, easily understood and used as a future reference point.   Before writing documentation, the target audience should be identified. Here, I follow either of these two approaches. Either I write a single document which starts with the top-level information (goal, approach, results) for non-technical audiences and then go into technical details in subsequent sections or in the appendix. Second approach is to write two documents, one technical and another non-technical with cross-references between them.
+  - Another interesting point was brought up during the session about documenting for technical and non-technical teams. This is such an important point. Successful documentation should to be read, easily understood and used as a future reference. Before writing documentation, the target audience should be identified. Here, I follow either of these two approaches. Either I write a single document which starts with the top-level information (goal, approach, results) for non-technical audiences and then go into technical details in subsequent sections or in the appendix. Second approach is to write two documents, one technical and another non-technical with cross-references between them.
 
 
 * *Communicate* unknowns, hurdles and results with client/team regularly.
-  - Ask for clarifications
-  - Understand the business problem behind the task rather than just doing the ask
+  - Ask for clarifications.
+  - Understand the business problem behind the task rather than just doing the ask.
   - Get their feedback on findings, model approach, etc.
 
 
 * *Organise* code/files in different projects, modules, etc. If using Python, use different environments for different projects, see below. This might sound so trivial to many, but the image of individual files spread on a laptop desktop gives me nightmares. And we all know people of this kind.
 
 
-## Techninal
+## Technical
 
 * Clearly *define the objectives and deliverables*. What type of model is it (e.g. classification, regression, etc.)? What are the deliverables, e.g. a report or a deployed model?
 
+
 * Make *data retrieval* as easy as possible. Concentrate all relevant data in a single database. Avoid multiple (Excel) files (particularly if they are scattered all over).
+
 
 * Spend time to *clean the data* from outliers, missing values, etc. From my multiyear experience in the field I ve come to know one golden rule. **No dataset is clean**. Communicate with the team/client about the inconsistencies, methods for dealing outliers and missing data. My colleagues shared two fun facts
   - On average 45% of time is spent on data preparation tasks, according to this [survey](https://www.datanami.com/2020/07/06/data-prep-still-dominates-data-scientists-time-survey-finds/).
@@ -66,7 +68,9 @@ I started making a list of points, but soon the list expanded to about 20 points
 
 * Spend time to *explore your data* (EDA). Any early insights/wins? Does the data make sense? Any surprising findings? Communicate findings with the team/client.
 
+
 * *Define your metric of success*. Different problems have different measures. There is no-size-fits-all (see accuracy). Identifying a rare disease might require more than a single metric (see ROC). Finally, validate the metric against the business ask.
+
 
 * For machine learning (ML) problems: Be aware of *imbalanced data*! This couples with the above point about metrics of success. Do spend time to treat imbalanced data.
 
@@ -110,7 +114,9 @@ I started making a list of points, but soon the list expanded to about 20 points
 
 * *Develop* reusable components into *internal libraries* for wider use and scalability.
 
+
 ## Conclusions
+
 The list of good and bad practices is never-ending and this article is getting into the area of a data science tutorial blog. I will stop here knowing that there are many more important points to cover. You might think that this list is lacking bad practices. Well, the absence of good practices are bad practices. Try to adopt the good practices and discard the bad ones.
 
 Obviously, there was not much time to cover every single of these points during the session. I initiated the discussion with my top three points, which are:
