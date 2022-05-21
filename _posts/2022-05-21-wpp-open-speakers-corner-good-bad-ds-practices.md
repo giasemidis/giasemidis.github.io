@@ -9,7 +9,7 @@ social-share: true
 
 As a member of the [WPP](https://www.wpp.com/) Open Data & AI community, I was asked to facilitate a discussion for the new series of sessions, "the Speaker's corner". I happily accepted the invitation, the community is very enthusiastic with loads of technical and domain expertise. However, I wasn't sure what I should speak about. What subject should I bring to engage the audience?
 
-Then a couple of days later I was trying to find the documentation of one of my agent based models and couldn't find it. When I found it, it wasn't very detailed. I was mad at myself, I thought "this is such a bad habit of mine. I need to make better documentation". And then it clicked, I decided to talk about *good and bad habits and practices in data science*. Admittedly, we all have both, so that's a great topic for discussion and sharing our experiences.
+Then a couple of days later I revisited the documentation of an old model. It wasn't very detailed. I was mad at myself, I thought "this is such a bad habit of mine. I need to make better documentation". And then it clicked, I decided to talk about *good and bad habits and practices in data science*. Admittedly, we all have both, so that's a great topic for discussion and sharing our experiences.
 
 I started making a list of points, but soon the list expanded to about 20 points. I shared my list with a couple of colleagues who added even more useful ideas. The list is split into two sections, general practices and technical. Here, I am documenting all the points from my initial list, my colleagues' suggestions and the community's comments and experiences during the session. I hope you enjoy it and find it useful.
 
