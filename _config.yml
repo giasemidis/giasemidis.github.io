@@ -69,7 +69,7 @@ giscus:
 # Ruby Date Format to show dates of posts
 date_format: "%B %-d, %Y"
 
-# Default YAML values (more information on Jekyll's site)
+Default YAML values (more information on Jekyll's site)
 defaults:
   -
     scope:
@@ -93,8 +93,8 @@ exclude:
   - Gemfile.lock
   - LICENSE
   - README.md
-  - screenshot.png
-  - docs/
+  # - screenshot.png
+  # - docs/
 
 plugins:
   - jekyll-paginate
