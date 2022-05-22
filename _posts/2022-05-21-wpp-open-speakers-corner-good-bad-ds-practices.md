@@ -11,7 +11,7 @@ As a member of the [WPP](https://www.wpp.com/) Open Data & AI community, I was a
 
 Then a couple of days later I revisited the documentation of an old model. It wasn't very detailed. I was mad at myself, I thought "this is such a bad habit of mine. I need to make better documentation". And then it clicked, I decided to talk about *good and bad habits and practices in data science*. Admittedly, we all have both, so that's a great topic for discussion and sharing our experiences.
 
-I started making a list of points, but soon the list expanded to about 20 points. I shared my list with a couple of colleagues who added even more useful ideas.  Here, I am documenting all the points from my initial list, my colleagues' suggestions and the community's comments and experiences during the session. The list is split into two sections, general practices and technical. I hope you enjoy it and find it useful.
+I started making a list of points, but soon the list expanded to about 20 points. I shared my list with a couple of colleagues who added even more useful ideas.  Here, I am documenting all the points from my initial list, my colleagues' suggestions and the community's comments and experiences shared during the session. The list is split into two sections, general practices and technical. I hope you enjoy it and find it useful.
 
 ## General Practices
 

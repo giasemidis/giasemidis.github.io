@@ -85,6 +85,9 @@ defaults:
     values:
       layout: "page"
 
+# Fill in your Google Analytics ID to track your website using Google Analytics
+google_analytics: "UA-229643177-1"
+
 # Exclude these files from production site
 # exclude:
 #   - CHANGELOG.md
