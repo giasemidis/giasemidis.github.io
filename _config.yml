@@ -69,7 +69,7 @@ giscus:
 # Ruby Date Format to show dates of posts
 date_format: "%B %-d, %Y"
 
-Default YAML values (more information on Jekyll's site)
+# Default YAML values (more information on Jekyll's site)
 defaults:
   -
     scope:
@@ -85,7 +85,7 @@ defaults:
     values:
       layout: "page"
 
-# Exclude these files from production site
+Exclude these files from production site
 exclude:
   - CHANGELOG.md
   - CNAME
