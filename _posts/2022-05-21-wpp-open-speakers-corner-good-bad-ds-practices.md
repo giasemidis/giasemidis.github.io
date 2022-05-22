@@ -16,15 +16,15 @@ I started making a list of points, but soon the list expanded to about 20 points
 ## General Practices
 
 * *Sharing* is caring. Sharing knowledge is a great habit for data science teams. Share a new tool, a new method or a new trick you learnt. This can be done in so many ways:
-  - Write a "how-to" article
+  - Write a "how-to" article when you figure out how a tool works.
   - Use tools that allow collaboration, e.g. [GitHub](https://github.com/)/[GitLab](https://gitlab.com/), [Confluence](https://www.atlassian.com/software/confluence), shared cloud drives
-  - Don’t be afraid to get exposed and set code-reviewing processes. From my experience, I learn most of tools and tricks through the code-review process (either reviewing others' code or by suggestions when my code is reviewed).
-  - Do not reinvent the wheel. If a colleague has written a function or a method, ask and use it.
+  - Don’t be afraid to get exposed.
+  - Do not reinvent the wheel. If a colleague has done a piece of work, ask and use it.
   - Similarly, be kind and share your work, the favour will be returned.
-  - Share beyond your team with the wider company or community (e.g. through blog updates). An interesting point was raised during the discussion; about sharing sensitive client knowledge and information. This should not be overlooked and permissions should be asked before sharing sensitive information.
+  - Share beyond your team with the wider company or community (e.g. through blog updates). An interesting point was raised during the discussion about sharing sensitive client knowledge and information. This should not be overlooked and permissions should be asked before sharing sensitive information.
 
 
-* *Research and learn*. Keep Learning new techniques, develop your skills or gain domain knowledge. Data science is such a fast-paced field with new tools, novel techniques and trends becoming available every year. Automation of previously manual processes is happening (see AutoML). Being up to date with the literature and the industry is a must skill for a data scientist. This can be done in various ways:
+* *Research and learn*. Keep learning new techniques, develop your skills and gain domain knowledge. Data science is such a fast-paced field with new tools, novel techniques becoming available and new trends emerging every year. Being up to date with the literature and the industry is a must skill for a data scientist. This can be done in various ways:
   - Follow popular blogs, e.g. [Medium](https://medium.com/), [Towards Data Science](https://towardsdatascience.com/), [KDnuggets](https://www.kdnuggets.com/), [kaggle](https://www.kaggle.com/) to name only a few among many great sources.
   - Get involved to new projects and explore new areas of data science, new methods or tools.
   - Take online courses on subjects of interest. There is plethora of (free and paid) courses online, [Coursera](https://www.coursera.org/) is a popular such platform.
@@ -113,6 +113,12 @@ I started making a list of points, but soon the list expanded to about 20 points
 
 
 * *Develop* reusable components into *internal libraries* for wider use and scalability.
+
+
+* *Code review*. Set-up code-review processes. This has multiple advantages
+  - Ensures code quality.
+  - Reduces the risk of bugs in the code.
+  - Learning. From my experience, I learn most of tools and tricks through the code-review process (either reviewing others' code or by suggestions when my code is reviewed).
 
 
 ## Conclusions
