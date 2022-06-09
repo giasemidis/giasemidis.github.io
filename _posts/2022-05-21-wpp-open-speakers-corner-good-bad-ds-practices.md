@@ -13,6 +13,10 @@ Then a couple of days later I revisited the documentation of an old model. It wa
 
 I started making a list of points, but soon the list expanded to about 20 points. I shared my list with a couple of colleagues who added even more useful ideas.  Here, I am documenting all the points from my initial list, my colleagues' suggestions and the community's comments and experiences shared during the session. The list is split into two sections, general practices and technical. I hope you enjoy it and find it useful.
 
+| ![scriberia art-work](https://raw.githubusercontent.com/giasemidis/giasemidis.github.io/master/_posts/figures/scriberia-wpp-open-good-bad-habits-practices-data-science.jpg)|
+|:--:|
+|Fig. Art-work by [Scriberia](https://www.scriberia.com/) summarising the key concepts of the discussion|
+
 ## General Practices
 
 * *Sharing* is caring. Sharing knowledge is a great habit for data science teams. Share a new tool, a new method or a new trick you learnt. This can be done in so many ways:
