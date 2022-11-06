@@ -17,21 +17,22 @@ First, let's get familiar with the dataset. Here is a sample of the data.
 
 The columns of interest are:
 
-- *ID_ACTION*: an ID of the type of shot, with unique values being '2FGA', '2FGAB', '2FGM', '3FGA', '3FGAB', '3FGM', 'DUNK', 'FTM', 'LAYUPATT', 'LAYUPMD'.
-- *ACTION*: the type of shot, with unique values being 'Dunk', 'Free Throw In', 'Layup Made', 'Missed Layup', 'Missed Three Pointer', 'Missed Two Pointer', 'Three Pointer', 'Two Pointer'.
-- *COORD_X*: The x-coordinate of the court, the available values are extended from -740 to 746 units. Given that the width of a FIBA court is 15m, it should be extended from -750cm to 750cm when the basket is centred at x=0 and the units in the data must be cm.
-- *COORD_Y*: The y-coordinate of the court, the available values are extended between -156 to 1304 units (very likely cm as above). The basketball hoop sits at coordinates (0, 0), negative values indicate behind the basket area. The minimum value, -156, is consistent, given that the basket is at 1.2m from the baseline and the basketball hoop has radius 46cm, i.e. 166cm available space behind the basket. Finally, the length of a FIBA half-court is 14m, meaning that the total available length in the data, (1304 + 156 = 1460cm), just extends the 14m length, because a few shots were taken from the other half of the court.
-- *ΖΟΝΕ*: The zone on the court of the court, having unique values 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J'.
+-   *ID_ACTION*: an ID of the type of shot, with unique values being '2FGA', '2FGAB', '2FGM', '3FGA', '3FGAB', '3FGM', 'DUNK', 'FTM', 'LAYUPATT', 'LAYUPMD'.
+-   *ACTION*: the type of shot, with unique values being 'Dunk', 'Free Throw In', 'Layup Made', 'Missed Layup', 'Missed Three Pointer', 'Missed Two Pointer', 'Three Pointer', 'Two Pointer'.
+-   *COORD_X*: The x-coordinate of the court, the available values are extended from -740 to 746 units. Given that the width of a FIBA court is 15m, it should be extended from -750cm to 750cm when the basket is centred at x=0 and the units in the data must be cm.
+-   *COORD_Y*: The y-coordinate of the court, the available values are extended between -156 to 1304 units (very likely cm as above). The basketball hoop sits at coordinates (0, 0), negative values indicate behind the basket area. The minimum value, -156, is consistent, given that the basket is at 1.2m from the baseline and the basketball hoop has radius 46cm, i.e. 166cm available space behind the basket. Finally, the length of a FIBA half-court is 14m, meaning that the total available length in the data, (1304 + 156 = 1460cm), just extends the 14m length, because a few shots were taken from the other half of the court.
+-   *ΖΟΝΕ*: The zone on the court of the court, having unique values 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J'.
 
 In another [blogpost](https://g-giasemidis.medium.com/create-euroleague-shot-charts-in-python-7ba4aa574644), I explained how to draw shot charts on a basketball court plot, focusing on made and missed shots or the density of total shots. Here, I am focusing on three-pointers and two-pointers.
 
 ## Errors in data
 I started by plotting two-point field goals (FG) attempts (including layups, dunks, etc.) and three-point fields goal attempts, see the next two figures. It becomes obvious that the location shot data is not consistent. Many shots tagged as three pointers are well inside the arc, many are even inside the paint area. And vice-versa, many shots tagged as two-pointers are outside the arc, particularly one shot is well outside.
 
-| ![two-point-fga](https://raw.githubusercontent.com/giasemidis/giasemidis.github.io/master/_posts/figures/two-point-fg-attempted-since-2010-short-charts.png)|
+|![two-point-fga](https://raw.githubusercontent.com/giasemidis/giasemidis.github.io/master/_posts/figures/two-point-fg-attempted-since-2010-short-charts.png)|
 |:--:|
 |Fig. 1: Two-point FGA since season 2010.|
-| ![three-point-fga](https://raw.githubusercontent.com/giasemidis/giasemidis.github.io/master/_posts/figures/three-point-fg-attempted-since-2010-short-charts.png)|
+
+|![three-point-fga](https://raw.githubusercontent.com/giasemidis/giasemidis.github.io/master/_posts/figures/three-point-fg-attempted-since-2010-short-charts.png)|
 |:--:|
 |Fig. 2: Three-point FGA since season 2010.|
 
@@ -41,7 +42,7 @@ I particularly investigated that long "two-pointer" from Figure 1. According to 
 
 The [official shooting chart](https://www.euroleaguebasketball.net/euroleague/game-center/2019-20/khimki-moscow-region-crvena-zvezda-mts-belgrade/E2019/212/#shooting-chart) for B. Simanic from that game is shown below. It becomes obvious that the player had a missed and a made 3-point shots.
 
-| ![simanic-shot-chart](https://raw.githubusercontent.com/giasemidis/giasemidis.github.io/master/_posts/figures/simanic-shot-chart-khimki-red-start-2019-200.png)|
+|![simanic-shot-chart](https://raw.githubusercontent.com/giasemidis/giasemidis.github.io/master/_posts/figures/simanic-shot-chart-khimki-red-start-2019-200.png)|
 |:--:|
 |Fig. 3: Official Euroleague's shot chart of B. Simanic from the Khimki vs Red Star game in season 2019-2020.|
 
@@ -49,7 +50,7 @@ Then, I looked at the [official stat sheet](https://www.euroleaguebasketball.net
 
 Could it be that the data was faulty during a particular period due to a systematic error in data collection? I looked into the distribution of inconsistent shots in each season. I focused on registered three-pointers in areas of the court well inside the arc, a box of size `[-400, 400] x [0, 400]` according to the coordinates in the above plots. Similarly, I focused on registered two-pointers well outside the arc, in areas where the y-coordinate is greater than 700. In both cases, I wanted to avoid edge cases near the arc. The distribution of falsely registered type of FG based on their location on the floor is shown in Figure 4. It is evident, that these errors occur systematically every season (season 2022 is just in its 6th round).
 
-| ![distribution-false-shots](https://raw.githubusercontent.com/giasemidis/giasemidis.github.io/master/_posts/figures/distribution-falsely-registered-shots-by-year.png)|
+|![distribution-false-shots](https://raw.githubusercontent.com/giasemidis/giasemidis.github.io/master/_posts/figures/distribution-falsely-registered-shots-by-year.png)|
 |:--:|
 |Fig. 4: Distribution of falsely registered type of FG based on their location on the court.|
 
