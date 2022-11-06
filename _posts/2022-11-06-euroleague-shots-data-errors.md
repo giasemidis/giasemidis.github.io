@@ -43,9 +43,15 @@ The [official shooting chart](https://www.euroleaguebasketball.net/euroleague/ga
 
 | ![simanic-shot-chart](https://raw.githubusercontent.com/giasemidis/giasemidis.github.io/master/_posts/figures/simanic-shot-chart-khimki-red-start-2019-200.png)|
 |:--:|
-|Fig. 2: Official Euroleague's shot chart of B. Simanic from the Khimki vs Red Star game in season 2019-2020.|
+|Fig. 3: Official Euroleague's shot chart of B. Simanic from the Khimki vs Red Star game in season 2019-2020.|
 
 Then, I looked at the [official stat sheet](https://www.euroleaguebasketball.net/euroleague/game-center/2019-20/khimki-moscow-region-crvena-zvezda-mts-belgrade/E2019/212/#boxscore) from the game and the player has 0/1 2PT FG and 1/1 3PT FG. The missed shot, the long three pointer, is counted in the official stat as a 2 pointer. This is weird. I also looked at the official [play-by-play](https://www.euroleaguebasketball.net/euroleague/game-center/2019-20/khimki-moscow-region-crvena-zvezda-mts-belgrade/E2019/212/#play-by-play) and the shot taken at time 4:29 by Simanic is recorded as "Missed Two Pointer (0/1 - 0 pt)". This is the same time-stamp that the "long" two pointer has in my dataset too.
+
+Could it be that the data was faulty during a particular period due to a systematic error in data collection? I looked into the distribution of inconsistent shots in each season. I focused on registered three-pointers in areas of the court well inside the arc, a box of size `[-400, 400] x [0, 400]` according to the coordinates in the above plots. Similarly, I focused on registered two-pointers well outside the arc, in areas where the y-coordinate is greater than 700. In both cases, I wanted to avoid edge cases near the arc. The distribution of falsely registered type of FG based on their location on the floor is shown in Figure 4. It is evident, that these errors occur systematically every season (season 2022 is just in its 6th round).
+
+| ![distribution-false-shots](https://raw.githubusercontent.com/giasemidis/giasemidis.github.io/master/_posts/figures/distribution-falsely-registered-shots-by-year.png)|
+|:--:|
+|Fig. 4: Distribution of falsely registered type of FG based on their location on the court.|
 
 
 ## Conclusion
