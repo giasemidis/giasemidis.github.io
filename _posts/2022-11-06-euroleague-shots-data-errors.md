@@ -39,7 +39,7 @@ I understand that the distinction shouldn't be made by visually comparing the lo
 
 I particularly investigated that long "two-pointer". According to the collected data, this shot is from the 2019-2020 season, the game of Khimki Moscow Region against Red Star Belgrade and was made by B. Simanic. We went to the official Euroleague site and found the game details, shooting-chart and play-by-play.
 
-The [official shooting chart](https://www.euroleaguebasketball.net/euroleague/game-center/2019-20/khimki-moscow-region-crvena-zvezda-mts-belgrade/E2019/212/#shooting-chart) for B. Simanic from that game is shown below. It becomes obbious that the player had a missed and a made 3-point shots.
+The [official shooting chart](https://www.euroleaguebasketball.net/euroleague/game-center/2019-20/khimki-moscow-region-crvena-zvezda-mts-belgrade/E2019/212/#shooting-chart) for B. Simanic from that game is shown below. It becomes obvious that the player had a missed and a made 3-point shots.
 
 | ![simanic-shot-chart](https://raw.githubusercontent.com/giasemidis/giasemidis.github.io/master/_posts/figures/simanic-shot-chart-khimki-red-start-2019-200.png)|
 |:--:|
