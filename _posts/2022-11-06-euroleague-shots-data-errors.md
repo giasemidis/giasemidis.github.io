@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Lessons from a review of low-voltage load forecasting
-subtitle: Challenges and Recommendations
+title: Errors in Euroleague shooting location data
+subtitle:
 tags: [euroleague, data, shot-data]
 readtime: true
 social-share: true
@@ -13,7 +13,7 @@ I had never published these errors, so let's get into this once again. I am usin
 
 First, let's get familiar with the dataset. Here is a sample of the data.
 
-![data-sample](figures/shot-data-head-example.png)
+![data-sample](https://raw.githubusercontent.com/giasemidis/giasemidis.github.io/master/_posts/figures/shot-data-head-example.png)
 
 The columns of interest are:
 
@@ -28,10 +28,10 @@ In another [blogpost](https://g-giasemidis.medium.com/create-euroleague-shot-cha
 ## Errors in data
 I started by plotting two-point field goals (FG) attempts (including layups, dunks, etc.) and three-point fields goals attempts, see the next two figures. It becomes obvious that the location shot data is not consistent. Many shots tagged as three pointers are well inside the arc, many are even inside the paint area. And vice-versa, many shots tagged as two-pointers are outside the arc, particularly one shot is well outside.
 
-| ![two-point-fga](figures/two-point-fg-attempted-since-2010-short-charts.png)|
+| ![two-point-fga](https://raw.githubusercontent.com/giasemidis/giasemidis.github.io/master/_posts/figures/two-point-fg-attempted-since-2010-short-charts.png)|
 |:--:|
 |Fig. 1: Two-point FGA since season 2010.|
-| ![three-point-fga](figures/three-point-fg-attempted-since-2010-short-charts.png)|
+| ![three-point-fga](https://raw.githubusercontent.com/giasemidis/giasemidis.github.io/master/_posts/figures/three-point-fg-attempted-since-2010-short-charts.png)|
 |:--:|
 |Fig. 2: Three-point FGA since season 2010.|
 
@@ -41,7 +41,7 @@ I particularly investigated that long "two-pointer". According to the collected 
 
 The [official shooting chart](https://www.euroleaguebasketball.net/euroleague/game-center/2019-20/khimki-moscow-region-crvena-zvezda-mts-belgrade/E2019/212/#shooting-chart) for B. Simanic from that game is shown below. It becomes obbious that the player had a missed and a made 3-point shots.
 
-| ![simanic-shot-chart](figures/simanic-shot-chart-khimki-red-start-2019-200.png)|
+| ![simanic-shot-chart](https://raw.githubusercontent.com/giasemidis/giasemidis.github.io/master/_posts/figures/simanic-shot-chart-khimki-red-start-2019-200.png)|
 |:--:|
 |Fig. 2: Official Euroleague's shot chart of B. Simanic from the Khimki vs Red Star game in season 2019-2020.|
 
