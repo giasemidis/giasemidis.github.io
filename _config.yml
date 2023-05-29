@@ -8,13 +8,15 @@ remote_theme: daattali/beautiful-jekyll
 navbar-links:
   About Me: "aboutme"
   # Author's home: "https://giasemidis.github.io/"
-  CV: "https://giasemidis.github.io/docs/GGiasemidis-CV.pdf"
+  CV: "https://giasemidis.github.io/docs/GGiasemidis-CV-2023.pdf"
   Publications: "publications"
   Medium Articles:
     - LV forecasting literature review: "https://g-giasemidis.medium.com/lessons-from-a-review-of-low-voltage-load-forecasting-methods-1379627e8f0c"
     - Euroleague shot charts: "https://g-giasemidis.medium.com/create-euroleague-shot-charts-in-python-7ba4aa574644"
     - ESPN NBA Fantasy: "https://g-giasemidis.medium.com/nba-fantasy-analytics-with-python-on-epsn-f03f10a60187"
-  ESPN Fantasy APP: "https://espn-nba-fantasy.herokuapp.com/"
+  APPs:
+    - ESPN NBA Fantasy: "https://giasemidis-espn-nba-fantasy-streamlitpost-round-analysis-bfgw9v.streamlit.app/"
+    - ChatGPT Basketball Assistant: "https://giasemidis-openai-basketball-assistant-srcmain-jcc4xt.streamlit.app/"
 
 # avatar: photos/lego-scientist.jpg
 # round-avatar: True
