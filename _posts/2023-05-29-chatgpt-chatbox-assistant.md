@@ -142,6 +142,7 @@ prompt = (
 
 Chat-gpt-3.5-turbo model requires to explicitly state the instruction *classify* in the prompt in order to first perform a classification task of the query and then answer if it is basketball related.
 
+*Obviously, the example illustrated here focuses on basketball, but it can easily be extended to any other topic/field/area, see the example on marketing and advertising below.*
 
 ## Code and links
 Code and app links can be accessed in the links below.
