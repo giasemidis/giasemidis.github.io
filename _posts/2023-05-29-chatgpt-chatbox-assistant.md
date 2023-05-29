@@ -101,7 +101,7 @@ In the picture, I demonstrate how the chat-bot follows the context of the discus
 
 ### The importance of prompt engineering
 
-The previous version of the app used the model `text-davinci-003` which is available via the API end-point `Completion`. The prompt was:
+The previous version of the app used the model `text-davinci-003` which is available via the `Completion` API end-point. The prompt was:
 
 ```python
 prompt = (
