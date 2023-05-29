@@ -35,7 +35,7 @@ The API endpoint and model used in the previous version did not support continuo
 >
 > Typically, a conversation is formatted with a system message first, followed by alternating user and assistant messages.
 
-As the documentation suggests, the `messages` variables starts by giving the chat-bot a system role with the prompt:
+As the documentation suggests, the `messages` variable starts by giving the chat-bot the "system" role with the prompt:
 
 ```python
 prompt = (
@@ -54,7 +54,7 @@ messages =  [
 For every user input query, we append the `messages` list with
 
 ```python
-user_input = <User input>
+user_input = "<User input>"
 
 messages.append(
     {
@@ -68,7 +68,7 @@ messages.append(
 whereas for the ChatGPT responses, the `messages` is appended with the role `assistant`, i.e.
 
 ```python
-chatgpt_response = <ChatGPT response>
+chatgpt_response = "<ChatGPT response>"
 
 messages.append(
     {
@@ -78,7 +78,7 @@ messages.append(
 )
 ```
 
-After every query, the `messages` variables is past on the API,
+After every query, the `messages` variable is passed on the API,
 
 ```python
 def generate_response_chat(messages):
@@ -91,13 +91,13 @@ def generate_response_chat(messages):
     )
     return response["choices"][0]["message"]
 ```
-where I used `temperature=0` for more deterministic results.
+where `temperature=0` is used for more deterministic results.
 
-This way, the chat-bot follows the discussion and answers the question in the context of the previous conversation.
+This way, the chat-bot follows the discussion and answers a question in the context of the previous conversation.
 
-In the picture, I demonstrate how the chat-bot follows the context of the discussion and answers without specifiying the year in the second question and without specifying the player in the third (newest messages appear at the top).
+In the picture, I demonstrate how the chat-bot follows the context of the discussion and answers without specifying the year in the second question or the player in the third (newest messages appear at the top).
 
-![chatgpt-chatbox-example](https://github.com/giasemidis/giasemidis.github.io/blob/master/_posts/figures/chatgpt-api-chatbox-example.png)
+![chatgpt-chatbox-example](https://raw.githubusercontent.com/giasemidis/giasemidis.github.io/master/_posts/figures/chatgpt-api-chatbox-example.png)
 
 ### The importance of prompt engineering
 
