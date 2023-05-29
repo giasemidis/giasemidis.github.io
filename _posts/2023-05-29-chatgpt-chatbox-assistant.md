@@ -21,6 +21,10 @@ We need to make two changes to the previous code:
 
 For the former, we use the [streamlit-chat](https://pypi.org/project/streamlit-chat/) library, which provides a nice interface for a chat-box functionality. Newest messages appear at the top of the chat.
 
+These two references helped me to get started.
+- [How to build an LLM-powered ChatBot with Streamlit](https://blog.streamlit.io/how-to-build-an-llm-powered-chatbot-with-streamlit/)
+- [Build Your Own Chatbot 🤖 with openAI GPT-3 and Streamlit 🎈](https://medium.com/@avra42/build-your-own-chatbot-with-openai-gpt-3-and-streamlit-6f1330876846)
+
 ## ChatCompletion API endpoint
 
 The API endpoint and model used in the previous version did not support continuous conversations, as new messages are not linked with previous ones. ChatGPT API provides the [ChatCompletion](https://platform.openai.com/docs/guides/chat) end-point for that purpose, which is used with model `gpt-3.5-turbo-0301`. This API allows past messages to be included in the query. Quoting the API documentation
