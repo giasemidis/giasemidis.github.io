@@ -93,7 +93,7 @@ This way, the chat-box follows the discussion and answers the question in the co
 
 In the picture, I demonstrate how the chat-box follows the context of the discussion and answers without specifiying the year in the second question and without specifying the player in the third (newest messages appear at the top).
 
-![chatgpt-chatbox-example](https://raw.githubusercontent.com/giasemidis/giasemidis.github.io/master/_posts/figures/chatgpt-api-chatbox-example.jpg)
+![chatgpt-chatbox-example](https://github.com/giasemidis/giasemidis.github.io/blob/master/_posts/figures/chatgpt-api-chatbox-example.png)
 
 ### The importance of prompt engineering
 
