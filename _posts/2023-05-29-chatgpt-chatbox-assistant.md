@@ -9,7 +9,7 @@ social-share: true
 
 In the [previous post](https://giasemidis.github.io/2023/05/08/chatgpt-eassistant.html), I described how to build an expert assistant, which answers only questions in a specific field, using ChatGPT API, streamlit and appropriate prompt engineering. However, the previous version of the app lacked a chat-box functionality.
 
-Here, I describe how to adapt the previous code and add a chat-box capability to our expert assistant, which can follow-up questions from previous conversations.
+Here, I describe how to adapt the previous code and add a chat-bot capability to our expert assistant, which can follow-up questions from previous conversations.
 
 To set-up the ChatGPT API, see the corresponding section of the [previous post](https://giasemidis.github.io/2023/05/08/chatgpt-eassistant.html).
 
@@ -35,7 +35,7 @@ The API endpoint and model used in the previous version did not support continuo
 >
 > Typically, a conversation is formatted with a system message first, followed by alternating user and assistant messages.
 
-As the documentation suggests, the `messages` variables starts by giving the chat-box a system role with the prompt:
+As the documentation suggests, the `messages` variables starts by giving the chat-bot a system role with the prompt:
 
 ```python
 prompt = (
@@ -93,9 +93,9 @@ def generate_response_chat(messages):
 ```
 where I used `temperature=0` for more deterministic results.
 
-This way, the chat-box follows the discussion and answers the question in the context of the previous conversation.
+This way, the chat-bot follows the discussion and answers the question in the context of the previous conversation.
 
-In the picture, I demonstrate how the chat-box follows the context of the discussion and answers without specifiying the year in the second question and without specifying the player in the third (newest messages appear at the top).
+In the picture, I demonstrate how the chat-bot follows the context of the discussion and answers without specifiying the year in the second question and without specifying the player in the third (newest messages appear at the top).
 
 ![chatgpt-chatbox-example](https://github.com/giasemidis/giasemidis.github.io/blob/master/_posts/figures/chatgpt-api-chatbox-example.png)
 
