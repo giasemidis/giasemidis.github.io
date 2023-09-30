@@ -15,7 +15,7 @@ In this article, I go on and create an app for interacting with our own data (up
 
 *Disclaimer: The proposed solution is for demostration purposes. It has not been fully tested and there will be cases and datasets where it breaks. Use it with caution and adapt it accordingly.*
 
-First, I created a simple chatbot, following [previous work](https://giasemidis.github.io/2023/05/29/chatgpt-chatbox-assistant.html) and the chatbot built for [part I](https://giasemidis.github.io/2023/09/30/chatgpt-chatbot-and-plot.html). Here is a screenshot of the landing page.
+First, I created a simple chatbot, following [previous work](https://giasemidis.github.io/2023/05/29/chatgpt-chatbox-assistant.html) and the chatbot built for [part I](https://giasemidis.github.io/2023/09/30/chatgpt-chatbot-and-plot.html). The `Memory window` parameter controls the size of history messages that is kept for context. Here is a screenshot of the landing page.
 
 ![landingpage](https://raw.githubusercontent.com/giasemidis/giasemidis.github.io/master/_posts/figures/chatgpt-owndata-landpage.png)
 
@@ -173,7 +173,7 @@ Each call to the LLM is limited by the maximum number of tokens. As the queries 
 
 Also, I rarely found that some questions do not return the correct result if they are asked after multiple other questions. The reason is that the history of messages also feeds into the LLM and the LangChain agent, creating noise to the latter. If the same question is asked in the beginning of teh chat, the correct result is returned, due to the limited history and noise.
 
-A solution to the these problems is to keep only the last 3 user queries and their responses in the chat history that feeds into the chat API.
+A solution to the these problems is to keep only the last N, where N is 2 or 3, user queries and their responses in the chat history that feeds into the chat API, see the `Memory window` parameter.
 
 # Conclusion
 
