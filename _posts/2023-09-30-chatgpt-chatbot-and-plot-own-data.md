@@ -163,17 +163,17 @@ In this case, we need to refine our question as follows:
     ![q6](https://raw.githubusercontent.com/giasemidis/giasemidis.github.io/master/_posts/figures/chatgpt-plot-owndata-q6.png)
 
 ### Country name varies
-Another common error occurs when I queried the data of, say, the United States by asking it to return data for the US. "US" does not appear in the data, sence resulting in error or no results. In this case, I had to refine my question and used "United States". Another way, which scales to more solutions is to include an instruction in the system prompt, in which we explain to the LLM to treat common country abbreviations, e.g. UK, US, etc., with their full names, i.e. United Kingdom, United States, etc., respectively and vice versa.
+Another common error occurs when I queried the data of, say, the United States by asking it to return data for the US. "US" does not appear in the data, hence resulting in an error or no results. In this case, I had to refine my question and used "United States". Another way, which scales to more solutions is to include an instruction in the system prompt, in which we explain to the LLM to treat common country abbreviations, e.g. UK, US, etc., with their full names, i.e. United Kingdom, United States, etc., respectively and vice versa.
 
 ### Plot data directly
-This solution does not cover prompts which ask to directly plot the data without first displaying them in separate query. This is of course doable but for demonstration reason, I kept the solution as a two-step process. This implementation introduces the following limitation. One cannot retrieve and plot large amounts of data, e.g. say the CO2 emissions of UK, US and Germany from 1950 to 2020. This query returns a truncated result and the resulting plot displays only a small subset of data.
+This solution does not cover prompts which ask to directly plot the data without first displaying them in separate query. This is of course doable but for demonstration reasons I kept the solution as a two-step process. The current implementation introduces the following limitation. One cannot retrieve and plot large amounts of data, e.g. say the CO2 emissions of UK, US and Germany from 1950 to 2020. This query returns a truncated result and the resulting plot displays only a small subset of data.
 
-### Queries growing in size (tokens)
+### Queries growing in size (i.e. tokens)
 Each call to the LLM is limited by the maximum number of tokens. As the queries and answers grow with time, they might reach a point where the number of input tokens (messages) is greater than the maximum number set. This will result in an error.
 
-Also, I rarely found that some questions do not return the correct result if they are asked after multiple other questions. The reason is that the history of messages also feeds into the LLM and the LangChain agent, creating noise. If the same question is asked in the beginning, the correct result is returned, due to limited history and noise.
+Also, I rarely found that some questions do not return the correct result if they are asked after multiple other questions. The reason is that the history of messages also feeds into the LLM and the LangChain agent, creating noise to the latter. If the same question is asked in the beginning of teh chat, the correct result is returned, due to the limited history and noise.
 
-A solution to the above problems is to keep only the last 3 user queries and their responses in the chat history that feeds into the chat API.
+A solution to the these problems is to keep only the last 3 user queries and their responses in the chat history that feeds into the chat API.
 
 # Conclusion
 
