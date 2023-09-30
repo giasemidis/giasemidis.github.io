@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Chat and visualise with your data
-subtitle: Using the ChatGPT API and Streamlit and clever prompt engineering
+title: Chat and visualise with your data - Part I
+subtitle: Using the ChatGPT API, Streamlit and clever prompt engineering
 tags: [chatgpt,api,chatbox,streamlit,plot,plotly,prompt engineering]
 readtime: true
 social-share: true
@@ -151,4 +151,4 @@ In the next article, I explain how one can interact, query and plot with their o
 ## Code and links
 
 <!-- - [App link]() -->
-- [GitHub repo]()
+- [GitHub repo](https://github.com/giasemidis/streamlit-chatgpt-demo-app)
