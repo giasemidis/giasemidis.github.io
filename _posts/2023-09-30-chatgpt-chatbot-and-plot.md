@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Chat and visualise with your data - Part I
+title: Chat with and visualise your data - Part I
 subtitle: Using the ChatGPT API, Streamlit and clever prompt engineering
 tags: [chatgpt,api,chatbox,streamlit,plot,plotly,prompt engineering]
 readtime: true
@@ -16,7 +16,7 @@ Over a series of two articles, I will go through the core components of these ne
 
 *Disclaimer: The proposed solution is for demostration purposes. It has not been fully tested and there will be cases and datasets where it breaks. Use it with caution and adapt it accordingly.*
 
-First I created a simple chatbot, following [previous work](https://giasemidis.github.io/2023/05/29/chatgpt-chatbox-assistant.html) and adding some model parameters, like `Temperature`, `Maximum tokens` and `Top P`. In contrast to previous work, this is a generic chatbot. Here is a screenshot of the landing page.
+First, I created a simple chatbot, following [previous work](https://giasemidis.github.io/2023/05/29/chatgpt-chatbox-assistant.html) and adding some model parameters, like `Temperature`, `Maximum tokens` and `Top P`. In contrast to previous work, this is a generic chatbot. Here is a screenshot of the landing page.
 
 ![landingpage](https://raw.githubusercontent.com/giasemidis/giasemidis.github.io/master/_posts/figures/chatgpt-landpage.png)
 
@@ -63,7 +63,6 @@ code += """st.plotly_chart(fig, theme='streamlit', use_container_width=True)"""
 st.write(f"```{code}")
 exec(code)
 ```
-
 # Example #1
 
 For the following examples I use `gpt-3.5-turbo`, `temperature = 0.0`, and `Top P = 0.5`. For the first example I use the default maximum length 256.
@@ -150,5 +149,4 @@ In the next article, I explain how one can interact, query and plot with their o
 
 ## Code and links
 
-<!-- - [App link]() -->
 - [GitHub repo](https://github.com/giasemidis/streamlit-chatgpt-demo-app)
