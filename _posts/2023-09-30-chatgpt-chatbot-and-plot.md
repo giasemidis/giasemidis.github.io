@@ -20,7 +20,7 @@ In the following, I will go through the core components of these new features an
 
 First I created a simple chatbot, following [previous work](https://giasemidis.github.io/2023/05/29/chatgpt-chatbox-assistant.html) and adding some model parameters, like `Temperature`, `Maximum tokens` and `Top P`. In contrast to previous work, this is a generic chatbot. Here is a screenshot of the landing page.
 
-![landingpage](https://raw.githubusercontent.com/giasemidis/giasemidis.github.io/master/_posts/figures/chatgpt-landingpage.png)
+![landingpage](https://raw.githubusercontent.com/giasemidis/giasemidis.github.io/master/_posts/figures/chatgpt-landpage.png)
 
 # The plotting feature
 
