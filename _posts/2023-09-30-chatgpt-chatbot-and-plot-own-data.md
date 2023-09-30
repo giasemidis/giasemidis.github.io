@@ -29,7 +29,7 @@ We upload the file, which is read as a pandas dataframe, `df`, in the code below
 
 # The LanchChain Agent
 
-First, we need to define an LLM model object which will be passed into the agent. Then we define the pandas agent object and finally we pass the messages/queries from the chatbot into the pandas agent, which does all the heavy-lifiting for converting the query into a valid pandas code. If `return_intermediate_steps=True`, the agent returns a dictionary with two keys "intermediate_steps", which contains a list of all the steps performed before the agent concludes to a result, and the "output" key which contains the actual answer in a text format. We use the content of the "intermediate_steps" key to display the final executed code. This way, the user can validate if the executed pandas query is correct, if not, they can refine the question.
+First, we need to define an LLM model object which will be passed into the agent. Then we define the pandas agent object and finally we pass the messages/queries, `st.session_state.messages`, from the chatbot into the pandas agent, which does all the heavy-lifiting for converting the query into a valid pandas code. If `return_intermediate_steps=True`, the agent returns a dictionary with two keys `intermediate_steps`, which contains a list of all the steps performed before the agent concludes to a result, and the `output` key which contains the actual answer in a text format. We use the content of the `intermediate_steps` key to display the final executed code. This way, the user can validate if the executed pandas query is correct, if not, they can refine the question.
 
 ```python
 from langchain.agents import AgentType
@@ -74,16 +74,16 @@ The plotting feature was described in [part I](https://giasemidis.github.io/2023
 
 We start by uploading the aforementioned data file. Our first few queries are as follows
 * User: "*Preview the first five rows of the data*"
-* Assistant: "*Executed the code `df.head()`*" with a table of the first 5 rows, see below. The assistant not only gives the answer but also display the executed pandas code for producing the result. A familiar pandas user can recognise that the answer is correct.
+* Assistant: "*Executed the code `df.head()`*" followed by a table of the first 5 rows, see below. The assistant not only gives the answer but also display the executed pandas code for producing the result. A familiar pandas user can recognise that the answer is correct.
   ![q1](https://raw.githubusercontent.com/giasemidis/giasemidis.github.io/master/_posts/figures/chatgpt-plot-owndata-q1
 .png)
 
 Next we query some statistics of the data coverage.
 
 * User: "*How many countries are there in the data?*"
-* Assistant: "*Executed the code `df['Entity'].nunique()`. There are 218 countries in the data.*". Interestingly, the LangChain agent understands that the column "Entity" holds the country information and queried it. A familiar pandas user recognises that the executed code is correct.
-* User:
-* Assistant: "*Executed the code `df['Year'].min(), df['Year'].max()`. The minimum year in the data is 1850 and the maximum year is 2021*. The code executed and answers are correct.
+* Assistant: "*Executed the code `df['Entity'].nunique()`. There are 218 countries in the data.*" Interestingly, the LangChain agent understands that the column "Entity" holds the country information and queried it. A familiar pandas user recognises that the executed code is correct.
+* User: "*What is the minimum and maximum year in the data?*"
+* Assistant: "*Executed the code `df['Year'].min(), df['Year'].max()`. The minimum year in the data is 1850 and the maximum year is 2021*". The code executed and answers are correct.
 
 ![q1-3](https://raw.githubusercontent.com/giasemidis/giasemidis.github.io/master/_posts/figures/chatgpt-plot-owndata-q1-3
 .png)
@@ -126,15 +126,17 @@ Next, I try a more advanced query.
 
     st.plotly_chart(fig, theme='streamlit', use_container_width=True)
     ```
-    ![ts-plot](https://raw.githubusercontent.com/giasemidis/giasemidis.github.io/master/_posts/figures/chatgpt-plot-owndata-ts-plot
-    .png)
+    ![ts-plot](https://raw.githubusercontent.com/giasemidis/giasemidis.github.io/master/_posts/figures/chatgpt-plot-owndata-ts-plot.png)
 
 I continued testing more advanced queries, such as:
 * User: "*What is the average emissions between 2010 and 2020 in Germany?*"
-* Assistant: "*Executed the code `df[(df['Entity'] == 'Germany') & (df['Year'] >= 2010) & (df['Year'] <= 2020)]['Annual CO₂ emissions from land-use change per capita'].mean(). The average emissions between 2010 and 2020 in Germany is approximately -0.1558.*" An experienced pandas user recognises that this is the correct pandas query, hence result.
+* Assistant: "*Executed the code `df[(df['Entity'] == 'Germany') & (df['Year'] >= 2010) & (df['Year'] <= 2020)]['Annual CO₂ emissions from land-use change per capita'].mean()`. The average emissions between 2010 and 2020 in Germany is approximately -0.1558.*"
+  An experienced pandas user recognises that this is the correct pandas query, hence result.
   ![q5](https://raw.githubusercontent.com/giasemidis/giasemidis.github.io/master/_posts/figures/chatgpt-plot-owndata-q5.png)
 
-## Final Notes
+## Final notes: common errors and troubleshooting
+
+### Code is not executed
 Rarely, I found that the pandas agent produces the correct code, but it doesn't execute it, therefore it doesn't return a result.
 For example, in the following question:
 * User: "*What are the CO2 emission ratio between United States and Germany in 2018?*"
@@ -160,6 +162,18 @@ In this case, we need to refine our question as follows:
 * Assistant: "*Executed the code `df[(df['Entity'] == 'United States') & (df['Year'] == 2018)]['Annual CO₂ emissions from land-use change per capita'].values[0] / df[(df['Entity'] == 'Germany') & (df['Year'] == 2018)]['Annual CO₂ emissions from land-use change per capita'].values[0]`. The CO2 emission ratio between the United States and Germany in 2018 is approximately -2.1965.*"
     ![q6](https://raw.githubusercontent.com/giasemidis/giasemidis.github.io/master/_posts/figures/chatgpt-plot-owndata-q6.png)
 
+### Country name varies
+Another common error occurs when I queried the data of, say, the United States by asking it to return data for the US. "US" does not appear in the data, sence resulting in error or no results. In this case, I had to refine my question and used "United States". Another way, which scales to more solutions is to include an instruction in the system prompt, in which we explain to the LLM to treat common country abbreviations, e.g. UK, US, etc., with their full names, i.e. United Kingdom, United States, etc., respectively and vice versa.
+
+### Plot data directly
+This solution does not cover prompts which ask to directly plot the data without first displaying them in separate query. This is of course doable but for demonstration reason, I kept the solution as a two-step process. This implementation introduces the following limitation. One cannot retrieve and plot large amounts of data, e.g. say the CO2 emissions of UK, US and Germany from 1950 to 2020. This query returns a truncated result and the resulting plot displays only a small subset of data.
+
+### Queries growing in size (tokens)
+Each call to the LLM is limited by the maximum number of tokens. As the queries and answers grow with time, they might reach a point where the number of input tokens (messages) is greater than the maximum number set. This will result in an error.
+
+Also, I rarely found that some questions do not return the correct result if they are asked after multiple other questions. The reason is that the history of messages also feeds into the LLM and the LangChain agent, creating noise. If the same question is asked in the beginning, the correct result is returned, due to limited history and noise.
+
+A solution to the above problems is to keep only the last 3 user queries and their responses in the chat history that feeds into the chat API.
 
 # Conclusion
 
