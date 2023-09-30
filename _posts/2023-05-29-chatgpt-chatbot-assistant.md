@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Build a chat-box assistant expert
+title: Build a chat-bot assistant expert
 subtitle: Using the ChatGPT API and Streamlit
 tags: [chatgpt,api,chatbox,streamlit,app,basketball,marketing,advertising]
 readtime: true
