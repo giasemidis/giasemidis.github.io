@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Chat with and visualise your data - Part II
-subtitle: Using the ChatGPT API, Streamlit and clever prompt engineering
+subtitle: Using the ChatGPT API, LangChain agents, Streamlit and clever prompt engineering
 tags: [chatgpt,api,chatbox,streamlit,plot,plotly,prompt engineering,langchain,agent]
 readtime: true
 social-share: true

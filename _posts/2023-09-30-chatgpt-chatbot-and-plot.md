@@ -117,7 +117,7 @@ As a second example, let's try to fetch more data. Since the answer is expected 
 * Assistant:
   ![annual-gdp-response](https://raw.githubusercontent.com/giasemidis/giasemidis.github.io/master/_posts/figures/chatgpt-annual-gdp-response.png)
 
-As one can see the assistant returned the data in a tabular format as requested. Again, we don't focus here whether the data is accurate, as we demonstrate the capability of interacting with data and plotting it.
+As one can observe, the assistant returned the data in a tabular format as requested. Again, we don't focus here whether the data is accurate, as we demonstrate the capability of interacting with data and plotting it.
 
 * User: "*Can you plot this data in a timeseries plot?*"
 * Assistant:
