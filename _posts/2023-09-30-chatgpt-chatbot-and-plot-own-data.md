@@ -11,11 +11,11 @@ In the [first part](https://giasemidis.github.io/2023/09/30/chatgpt-chatbot-and-
 
 In this article, I go on and create an app for interacting with our own data (uploaded via a csv file). This is achieved by utilising the [LangChain pandas dataframe agent](https://python.langchain.com/docs/integrations/toolkits/pandas). There is no need to train on data or create complex prompts, the LangChain pandas agent does all the heavy lifting for us.
 
-*Caution: This solution works quite well for tabular data with numerical values. If your data is not tabular or contain much textual data, consider using embeddings, vector databases for querying and retrieving your data.*
+*Caution: This solution works well for tabular data with numerical values. If your data is not tabular or contain much textual data, consider using embeddings, vector databases for querying and retrieving your data.*
 
 *Disclaimer: The proposed solution is for demostration purposes. It has not been fully tested and there will be cases and datasets where it breaks. Use it with caution and adapt it accordingly.*
 
-First, I created a simple chatbot, following [previous work](https://giasemidis.github.io/2023/05/29/chatgpt-chatbox-assistant.html) and the chatbot built for [part I](https://giasemidis.github.io/2023/09/30/chatgpt-chatbot-and-plot.html). The `Memory window` parameter controls the size of history messages that is kept for context. Here is a screenshot of the landing page.
+First, I created a simple chatbot, following [previous work](https://giasemidis.github.io/2023/05/29/chatgpt-chatbox-assistant.html) and the chatbot built for [part I](https://giasemidis.github.io/2023/09/30/chatgpt-chatbot-and-plot.html). The `Memory window` parameter controls the size of history messages that are fed into the LLM for context. Here is a screenshot of the landing page.
 
 ![landingpage](https://raw.githubusercontent.com/giasemidis/giasemidis.github.io/master/_posts/figures/chatgpt-owndata-landpage.png)
 
@@ -25,13 +25,14 @@ We need a dataset for demonstration reasons. I use the Annual CO2 emissions from
 
 Download the data if you want to follow the tutorial on your local app (see the [GitHub repo](https://github.com/giasemidis/streamlit-chatgpt-demo-app) for instruction how to run the app locally.)
 
-We upload the file, which is read as a pandas dataframe, `df`, in the code below.
+The uploaded file is read as a pandas dataframe, `df`, in the code below.
 
 # The LanchChain Agent
 
-First, we need to define an LLM model object which will be passed into the agent. Then we define the pandas agent object and finally we pass the messages/queries, `st.session_state.messages`, from the chatbot into the pandas agent, which does all the heavy-lifiting for converting the query into a valid pandas code. If `return_intermediate_steps=True`, the agent returns a dictionary with two keys `intermediate_steps`, which contains a list of all the steps performed before the agent concludes to a result, and the `output` key which contains the actual answer in a text format. We use the content of the `intermediate_steps` key to display the final executed code. This way, the user can validate if the executed pandas query is correct, if not, they can refine the question.
+First, we need to define an LLM model object which will be passed into the agent. Then we define the pandas agent object and finally we pass the messages/queries, `st.session_state.messages`, from the chatbot into the pandas agent, which does all the heavy-lifiting for converting the query into valid pandas code. If `return_intermediate_steps=True`, the agent returns a dictionary with two keys `intermediate_steps`, which contains a list of all the steps performed before the agent concludes to a result, and the `output` key which contains the actual answer in text format. I use the content of the `intermediate_steps` key to display the final executed code. This way, the user can validate if the executed pandas query is correct, if not, they can refine the question.
 
 ```python
+# code extracted from the src.llm_utils.chat_with_data_api function
 from langchain.agents import AgentType
 from langchain.agents import create_pandas_dataframe_agent
 from langchain.chat_models import ChatOpenAI
@@ -68,11 +69,11 @@ print(answer["output"])
 
 # The plotting feature
 
-The plotting feature was described in [part I](https://giasemidis.github.io/2023/09/30/chatgpt-chatbot-and-plot.html). We will now demonstrate how it interacts with our own data.
+The plotting feature was described in [part I](https://giasemidis.github.io/2023/09/30/chatgpt-chatbot-and-plot.html). I will now demonstrate how it interacts with our own data.
 
 # Examples
 
-We start by uploading the aforementioned data file. Our first few queries are as follows
+I start by uploading the aforementioned data file. The first few queries are as follows:
 * User: "*Preview the first five rows of the data*"
 * Assistant: "*Executed the code `df.head()`*" followed by a table of the first 5 rows, see below. The assistant not only gives the answer but also display the executed pandas code for producing the result. A familiar pandas user can recognise that the answer is correct.
   ![q1](https://raw.githubusercontent.com/giasemidis/giasemidis.github.io/master/_posts/figures/chatgpt-plot-owndata-q1
@@ -157,7 +158,7 @@ For example, in the following question:
 
     The code is correct, but it doesn't get executed and no answer is returned.
 
-In this case, we need to refine our question as follows:
+In this case, I refined my question as follows:
 * User: "*What is the CO2 emission ratio between United States and Germany in 2018? Return the value of the result*"
 * Assistant: "*Executed the code `df[(df['Entity'] == 'United States') & (df['Year'] == 2018)]['Annual CO₂ emissions from land-use change per capita'].values[0] / df[(df['Entity'] == 'Germany') & (df['Year'] == 2018)]['Annual CO₂ emissions from land-use change per capita'].values[0]`. The CO2 emission ratio between the United States and Germany in 2018 is approximately -2.1965.*"
     ![q6](https://raw.githubusercontent.com/giasemidis/giasemidis.github.io/master/_posts/figures/chatgpt-plot-owndata-q6.png)
@@ -166,18 +167,20 @@ In this case, we need to refine our question as follows:
 Another common error occurs when I queried the data of, say, the United States by asking it to return data for the US. "US" does not appear in the data, hence resulting in an error or no results. In this case, I had to refine my question and used "United States". Another way, which scales to more solutions is to include an instruction in the system prompt, in which we explain to the LLM to treat common country abbreviations, e.g. UK, US, etc., with their full names, i.e. United Kingdom, United States, etc., respectively and vice versa.
 
 ### Plot data directly
-This solution does not cover prompts which ask to directly plot the data without first displaying them in separate query. This is of course doable but for demonstration reasons I kept the solution as a two-step process. The current implementation introduces the following limitation. One cannot retrieve and plot large amounts of data, e.g. say the CO2 emissions of UK, US and Germany from 1950 to 2020. This query returns a truncated result and the resulting plot displays only a small subset of data.
+This solution does not cover prompts which ask to directly plot the data without first displaying them in separate query. This is of course doable but for demonstration reasons I kept the solution as a two-step process. The current implementation introduces the following limitation. One cannot retrieve and plot large amounts of data, e.g. say the CO2 emissions of UK, US and Germany from 1950 to 2020. This query returns a truncated result and the resulting plot displays only a small subset of the requested data.
 
 ### Queries growing in size (i.e. tokens)
 Each call to the LLM is limited by the maximum number of tokens. As the queries and answers grow with time, they might reach a point where the number of input tokens (messages) is greater than the maximum number set. This will result in an error.
 
-Also, I rarely found that some questions do not return the correct result if they are asked after multiple other questions. The reason is that the history of messages also feeds into the LLM and the LangChain agent, creating noise to the latter. If the same question is asked in the beginning of teh chat, the correct result is returned, due to the limited history and noise.
+Also, I rarely found that some questions do not return the correct result if they are asked after multiple other questions. The reason is that the history of messages also feeds into the LLM and the LangChain agent, creating noise to the latter. If the same question is asked in the beginning of the chat, the correct result is returned, due to the limited history and noise.
 
-A solution to the these problems is to keep only the last N, where N is 2 or 3, user queries and their responses in the chat history that feeds into the chat API, see the `Memory window` parameter.
+A solution to the these problems is to keep only the last N, where N is 2 or 3, pair of user queries and their responses in the chat history that feeds into the chat API, see the `Memory window` parameter.
 
 # Conclusion
 
 I hope I showed enough examples to demonstrate the power of the LangChain dataframe agents, which in combination with the plotting feature can produce an end-to-end analytics tool for experience and non-experienced users.
+
+Querying tabular databases is also doable and many articles have already demonstrated some use-cases. One can use the [LangChain database agent](https://python.langchain.com/docs/integrations/toolkits/sql_database), which works in similar fashion to the pandas agent. However, I personally found that it doesn't easily apply to databases in Snowflake or BigQuery. In this case, prompt engineering comes to rescue again. A prompt with detailed description of the data schema and instructions can give very accurate SQL query strings, which are executed using the corresponding database connectors. The returned results can be plotted using the prompts and tools described in this series of articles.
 
 ## Code and links
 - [GitHub repo](https://github.com/giasemidis/streamlit-chatgpt-demo-app)

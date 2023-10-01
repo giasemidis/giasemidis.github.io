@@ -7,22 +7,22 @@ readtime: true
 social-share: true
 ---
 
-I recently gave a presentation at the data science sharing session at workplace about creating a chatbot with ChatGPT and streamlit, similar to [previous work](https://giasemidis.github.io/2023/05/29/chatgpt-chatbox-assistant.html) but enhanced with two core concepts:
+At a recent data science sharing session at Choreograph, I delivered a presentation on developing a chatbot using ChatGPT and Streamlit. While this project draws inspiration from [previous work](https://giasemidis.github.io/2023/05/29/chatgpt-chatbox-assistant.html), it introduces two pivotal enhancements:
 
-1. Plotting capabilities
-2. Chat with your own data
+1. plotting capabilities
+2. Query and interact with your own data
 
-Over a series of two articles, I will go through the core components of these new features and describe how prompt engineering can help us visualise the data. I will also show how one can use their a [LangChain pandas dataframe agent](https://python.langchain.com/docs/integrations/toolkits/pandas) to query and visualise their own data, creating a complete data analytics end-to-end experience for non-technical users.
+Over a series of two articles, I will go through the core components of these new features and describe how prompt engineering can help us visualise the data in chat-bot framework. I will also show how one can query and visualise their own data using a [LangChain pandas dataframe agent](https://python.langchain.com/docs/integrations/toolkits/pandas), creating an end-to-end data analytics experience for technical and non-technical users.
 
 *Disclaimer: The proposed solution is for demostration purposes. It has not been fully tested and there will be cases and datasets where it breaks. Use it with caution and adapt it accordingly.*
 
-First, I created a simple chatbot, following [previous work](https://giasemidis.github.io/2023/05/29/chatgpt-chatbox-assistant.html) and adding some model parameters, like `Temperature`, `Maximum tokens` and `Top P`. In contrast to previous work, this is a generic chatbot. Here is a screenshot of the landing page.
+First, I created a simple chatbot, following [previous work](https://giasemidis.github.io/2023/05/29/chatgpt-chatbox-assistant.html) and adding some model hyper-parameters, like `Temperature`, `Maximum tokens` and `Top P`, that control the model output. In contrast to previous work, this is a generic chatbot. Here is a screenshot of the landing page.
 
 ![landingpage](https://raw.githubusercontent.com/giasemidis/giasemidis.github.io/master/_posts/figures/chatgpt-landpage.png)
 
 # The plotting feature
 
-In order to plot data fetched from the ChatGPT, I use a detailed prompt to let the language model know the exact instructions it needs to follow. Here is the prompt
+In order to plot data fetched from the ChatGPT, I use a detailed prompt to instruct the language model of the actions it needs to take. Here is the prompt
 
 ```
 Generate the code <code> for plotting the previous data in plotly,
@@ -36,9 +36,10 @@ I want my plot to be produced with Plotly. After some trial and error, I had to 
 
 The instruction should be clear and when code is expected it should be highlighted with a keyword `<code>`. Also, the output should be returned in a specific format so that the generated code can be extracted and used. For this reason I asked the LLM to return the output in triple quotes including `python` for reference.
 
-I use a regular expression to extract  the generated plotly code from the reponse
+I use a regular expression to extract the generated plotly code from the reponse
 
 ```python
+# code extracted from the src.llm_utils module
 def extract_python_code(text):
     pattern = r'```python\s(.*?)```'
     matches = re.findall(pattern, text, re.DOTALL)
@@ -53,9 +54,10 @@ If the generated response does not contain the code in the specified format, but
 1. The LLM could not identify any data in the previous responses.
 2. The maximum number of tokens is too short and the generated answer is cut-off, hence the response does not comply to the output format. In this case consider increasing the number of tokens.
 
-Next, we want to display the generated figure on our streamlit app. For this reason, we remove `fig.show()`, that it might be generated in the answer and feed the figure object into the `st.plotly_chart()` for display. We display the generated plotly code, so the user can review it and identify an potential issues. Finally we execute the produced code.
+Next, I want to display the generated figure on my streamlit app. For this reason, I remove `fig.show()`, that it might be generated in the answer and feed the figure object into the `st.plotly_chart()` for display. I display the generated plotly code, so the user can review it and identify any potential issues. Finally the produced code is executed.
 
 ```python
+# code extracted from the src.llm_utils module
 code = extract_python_code(
     response["choices"][0]["message"]["content"])
 code = code.replace("fig.show()", "")
@@ -67,7 +69,7 @@ exec(code)
 
 For the following examples I use `gpt-3.5-turbo`, `temperature = 0.0`, and `Top P = 0.5`. For the first example I use the default maximum length 256.
 
-Let's start with a simple example. We ask the following question
+Let's start with a simple example. I ask the following question
 
 * User: "*What was US, UK and Germany's GDP in 2018 and 2019?*"
 * Assistant:
@@ -105,7 +107,7 @@ My next question is to plot the data in bar plot.
     ```
     ![bar-plot](https://raw.githubusercontent.com/giasemidis/giasemidis.github.io/master/_posts/figures/chatgpt-gdp-bar-plot.png)
 
-The assistant produces the plotly code required for generated the bar plot and displays it. This is a plotly object, meaning that one can hover-over, zoom-in and save the plot.
+The assistant produces the plotly code required for generated the bar plot and displays it. It also produces the plotly plot, which is interactive, meaning that one can hover-over, zoom-in and save the plot.
 
 # Example #2
 
@@ -145,8 +147,9 @@ This is a great plot which was generated with two questions to the assistant.
 
 Clever prompt engineering can give a way to plotting data in a chatbot. In this article we focused on data fetched from a LLM, overlooking the data's validity.
 
-In the next article, I explain how one can interact, query and plot with their own data in csv format.
+In the [next article((https://giasemidis.github.io/2023/09/30/chatgpt-chatbot-and-plot-own-data.html))], I explain how one can interact, query and plot with their own data in csv format.
 
 ## Code and links
 
 - [GitHub repo](https://github.com/giasemidis/streamlit-chatgpt-demo-app)
+- [Chat with and visualise your data - Part II](https://giasemidis.github.io/2023/09/30/chatgpt-chatbot-and-plot-own-data.html)
