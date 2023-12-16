@@ -1,6 +1,8 @@
-# \\
+
 
 ## Data Science Career
+
+blah
 
 As a Lead Data Scientist at [Choreograph](https://www.choreograph.com/), [WPP](https://www.wpp.com/), I bring over a decade of expertise in the field of data science. My current focus is on leveraging Agent Based Models (ABM) to unravel the complexities of consumer behaviour. Additionally, I am involved in geospatial data science, where I explore the intricate patterns of geographical data to derive meaningful insights. My work in this area can be presented at the [Spatial Data Science Conference 2023](https://youtu.be/zKL6cuiOtcY?si=D-MClSFb4x4LEhqE). I am also passionate about Generative AI innovations and solutions, particularly in the development of advanced data-chatbots that are reshaping how we interact with our own data sources.
 
@@ -14,7 +16,7 @@ Before joining Choreograph, I was a Senior Data Scientist at [CountingLab](https
 
 ## The Physics Years
 
-Before becoming a data scientist, I have devoted my life in physics and particularly theoretical physics. I obtained my D.Phil. (PhD) in theoretical physics from University of Oxford, Kellogg College in 2013, studying aspects of [dimensional reduction in graph models of causal quantum gravity](https://solo.bodleian.ox.ac.uk/permalink/44OXF_INST/ao2p7t/cdi_proquest_journals_1683609513).
+Before becoming a data scientist, I have devoted my life in physics and particularly theoretical physics. I obtained my D.Phil. (PhD) in theoretical physics from University of Oxford, Kellogg College, in 2013, studying aspects of [dimensional reduction in graph models of causal quantum gravity](https://solo.bodleian.ox.ac.uk/permalink/44OXF_INST/ao2p7t/cdi_proquest_journals_1683609513).
 
 In 2009, I graduated with excellence from the Physics department of University of Athens, while also spending a semester at the University of Bonn, Germany, via the Erasmus programme.
 
