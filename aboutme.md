@@ -1,8 +1,6 @@
-
+  <!--  -->
 
 ## Data Science Career
-
-blah
 
 As a Lead Data Scientist at [Choreograph](https://www.choreograph.com/), [WPP](https://www.wpp.com/), I bring over a decade of expertise in the field of data science. My current focus is on leveraging Agent Based Models (ABM) to unravel the complexities of consumer behaviour. Additionally, I am involved in geospatial data science, where I explore the intricate patterns of geographical data to derive meaningful insights. My work in this area can be presented at the [Spatial Data Science Conference 2023](https://youtu.be/zKL6cuiOtcY?si=D-MClSFb4x4LEhqE). I am also passionate about Generative AI innovations and solutions, particularly in the development of advanced data-chatbots that are reshaping how we interact with our own data sources.
 
