@@ -8,7 +8,7 @@ remote_theme: daattali/beautiful-jekyll
 navbar-links:
   About Me: "aboutme"
   # Author's home: "https://giasemidis.github.io/"
-  CV: "https://giasemidis.github.io/docs/GGiasemidis-CV-2023.pdf"
+  CV: "https://giasemidis.github.io/docs/Georgios-Giasemidis-CV.pdf"
   Publications: "publications"
   Medium Articles:
     - LV forecasting literature review: "https://g-giasemidis.medium.com/lessons-from-a-review-of-low-voltage-load-forecasting-methods-1379627e8f0c"
