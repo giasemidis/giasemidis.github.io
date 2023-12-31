@@ -9,7 +9,7 @@ social-share: true
 
 The play style of basketball has evolved over the past two decades. Mid-range shots have drastically decreased in favour of more efficient three-point attempts in the NBA, an excellent overview of the topic is presented in the book [Sprawlball: A Visual Tour of the New Era of the NBA](https://www.goodreads.com/en/book/show/40796173) by Kirk Goldsberry.
 
-However, how are things evolving in European basketball and Euroleague? Here, I don't aim to examine any historical patterns over the years (which will be the subject of another blogpost), but I rather focus on the impact of volume of mid-range shots on a team's performance in the first half of the 2023-2024 Euroleague season (analysis will be updated as the season progresses).
+However, how are things evolving in European basketball and Euroleague? Here, I don't aim to examine any historical patterns over the years (which will be the subject of another blogpost), but I rather focus on the impact of volume of mid-range shots on a team's performance in the first half of the 2023-2024 Euroleague season (analysis will be updated as the season progresses). The analysis can be found on [this GitHub notebook](https://github.com/giasemidis/euroleague-shot-charts/blob/main/notebooks/mid-range-analysis.ipynb).
 
 This analysis was motivated simply by occasionally plotting the shooting charts of teams, see for example [this tweet](https://x.com/g_giase/status/1713184964483686494?s=20), where I started to notice a pattern that winning teams shoot far fewer mid-range buckets than the losing team. However, this observation was based on a handful of games and I wanted to properly examine the subject.
 
