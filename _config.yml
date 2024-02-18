@@ -34,6 +34,7 @@ social-network-links:
   twitter: g_giase
   instagram: g.giase
   youtube: channel/UCr7vIbsZST1LoOfx736iiGg
+  mentorcruise: georgios-giasemidis
 
  # Select which social network share links to show in posts
 share-links-active:
@@ -42,6 +43,7 @@ share-links-active:
   linkedin: true
   instagram: true
   medium: true
+  mentorcruise: true
 
  # Excerpt word length - Truncate the excerpt of each post on the feed page to the specified number of words
 excerpt_length: 50
