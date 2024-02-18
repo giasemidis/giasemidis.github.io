@@ -11,6 +11,10 @@ navbar-links:
   CV: "https://giasemidis.github.io/docs/Georgios-Giasemidis-CV.pdf"
   Publications: "publications"
   Medium Articles:
+    - Demonstrating the “Data Analysis” GPT: "https://g-giasemidis.medium.com/demonstrating-the-data-analysis-gpt-7586f0ed2b76"
+    - Chat with and visualise your data — Part II: "https://g-giasemidis.medium.com/chat-with-and-visualise-your-data-part-ii-c01896d4da57"
+    - Chat with and visualise your data — Part I: "https://g-giasemidis.medium.com/chat-with-and-visualise-your-data-part-i-40b7272a16d1"
+    - Good and Bad Practices and Habits in Data Science: "https://medium.com/@g-giasemidis/good-and-bad-practices-and-habits-in-data-science-dc169830092"
     - LV forecasting literature review: "https://g-giasemidis.medium.com/lessons-from-a-review-of-low-voltage-load-forecasting-methods-1379627e8f0c"
     - Euroleague shot charts: "https://g-giasemidis.medium.com/create-euroleague-shot-charts-in-python-7ba4aa574644"
     - ESPN NBA Fantasy: "https://g-giasemidis.medium.com/nba-fantasy-analytics-with-python-on-epsn-f03f10a60187"
