@@ -13,7 +13,7 @@ In summary, I am trying to address the following hypothesis; *Shooting fewer mid
 
 This analysis was motivated simply by occasionally plotting the shooting charts of teams, see for example [this tweet](https://x.com/g_giase/status/1713184964483686494?s=20), where I started to notice a pattern that winning teams shoot far fewer mid-range buckets than the losing team. However, this observation was based on a handful of games and I wanted to properly examine the subject.
 
-Having complete data from a full season, we are ready to draw a conclusive answer to the quetion.
+Having complete data from a full season, we are ready to draw a conclusive answer to the question.
 
 ## Definition of mid-range
 
@@ -41,7 +41,7 @@ First, we estimate the percentage of mid-range shots out of total field goals (F
 
 It is interesting that two teams that finished in the top 3 are in the opposite sides of the spectrum, Monaco and Real Madrid.
 
-## Impact on teams performance
+## Impact on team's performance
 
 Next, we search for correlations between a teams' percentage of midrange volume and their win percentage. The correlation value is $-0.15$, negative, but very weak, almost insignificant.
 
