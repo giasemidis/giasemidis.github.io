@@ -8,7 +8,7 @@ remote_theme: daattali/beautiful-jekyll
 navbar-links:
   About Me: "aboutme"
   # Author's home: "https://giasemidis.github.io/"
-  CV: "https://giasemidis.github.io/docs/Georgios-Giasemidis-CV.pdf"
+  CV: "https://giasemidis.github.io/docs/GeorgiosGiasemidis-CV.pdf"
   Publications: "publications"
   Medium Articles:
     - Demonstrating the “Data Analysis” GPT: "https://g-giasemidis.medium.com/demonstrating-the-data-analysis-gpt-7586f0ed2b76"
