@@ -22,8 +22,7 @@ navbar-links:
     - ESPN NBA Fantasy (Post-round): "https://espn-nba-fantasy-post-round-analysis.streamlit.app/"
     - ESPN NBA Fantasy (H2H pre-round): "https://espn-nba-fantasy-head-to-head-analysis.streamlit.app/"
     - ChatGPT Basketball Assistant: "https://giasemidis-openai-basketball-assistant-srcmain-jcc4xt.streamlit.app/"
-  # Support: "https://buymeacoffee.com/georgios.giasemidis"
-  <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="georgios.giasemidis" data-color="#FFDD00" data-emoji=""  data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
+  Support: "https://buymeacoffee.com/georgios.giasemidis"
 
 # avatar: photos/lego-scientist.jpg
 # round-avatar: True
