@@ -2,7 +2,7 @@ theme: jekyll-theme-minimal
 title: Georgios Giasemidis' homepage
 author: Georgios Giasemidis
 description: My personal web-space, keep an eye for updates
-remote_theme: daattali/beautiful-jekyll
+remote_theme: daattali/beautiful-jekyll@5.0.0
 
 
 navbar-links:
