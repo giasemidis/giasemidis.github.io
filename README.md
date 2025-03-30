@@ -1,10 +1,10 @@
 Hello, welcome to my personal page. Browse around for
 
-* [Personal details](aboutme.md)
+* [Personal details](https://giasemidis.github.io/aboutme)
 * [CV](https://giasemidis.github.io/docs/GeorgiosGiasemidis-CV.pdf)
 * Webinars
 * Blog-posts
-* [Publications](publications.md).
+* [Publications](https://giasemidis.github.io/publications)
 
 For mentoring, browse plans and book a session in the following link:
 
