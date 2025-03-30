@@ -9,7 +9,7 @@ navbar-links:
   About Me: "aboutme"
   # Author's home: "https://giasemidis.github.io/"
   CV: "https://giasemidis.github.io/docs/GeorgiosGiasemidis-CV.pdf"
-  Publications: "publications"https://www.linkedin.com/events/fromzerotopro-strategiesforasuc7237439177259167744/comments/
+  Publications: "publications.md"
   Webinars:
     - Advanced Analytics in Euroleague Basketball with Python: "https://www.youtube.com/live/_JLXAQMzA6s?si=ORM8jlZE6GcplYFk"
     - "The Power of Scenario Planning for Businesses & Government": "https://www.linkedin.com/events/thepowerofscenarioplanningforbu7259181829709000705/comments/"
