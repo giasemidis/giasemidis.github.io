@@ -17,7 +17,7 @@ I am also deeply committed to mentoring the next generation of data scientists, 
 
 Previously, I have participated on [KaggleX](https://www.kagglex.org/) mentoriship programme and the [Mentorloop](https://mentorloop.com/) platform in my organisation.
 
-I am a member and external collaborator at the [Sports Analytics Group]((https://aueb-analytics.wixsite.com/sports)), Department of Statistics at the Athens University of Economics and Business (AUEB), where I contribute with my work on basketball analytics. I am the author of a the popular python package [Euroleague API](https://pypi.org/project/euroleague-api/).
+I am a member and external collaborator at the [Sports Analytics Group]((https://aueb-analytics.wixsite.com/sports)), Department of Statistics at the Athens University of Economics and Business (AUEB), where I contribute with my work on basketball analytics. I am the author of the popular [Euroleague API](https://pypi.org/project/euroleague-api/) Python package.
 
 My academic contributions include several high-impact publications in peer-reviewed journals and conference proceedings, focusing on time-series forecasting, machine learning applications, network analysis, and theoretical physics. My work has garnered hundreds of citations, a testament to its influence in the scientific community, check my [Google Scholar](https://scholar.google.co.uk/citations?user=vVyWiE8AAAAJ&hl=en/) profile.
 
