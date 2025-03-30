@@ -1,4 +1,10 @@
-Hey, welcome to my personal page. Browse around for personal details, blog posts and publications.
+Hello, welcome to my personal page. Browse around for
+
+* [Personal details](aboutme.md)
+* [CV](https://giasemidis.github.io/docs/GeorgiosGiasemidis-CV.pdf)
+* Webinars
+* Blog-posts
+* [Publications](publications.md).
 
 For mentoring, browse plans and book a session in the following link:
 

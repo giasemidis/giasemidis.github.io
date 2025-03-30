@@ -9,8 +9,12 @@ navbar-links:
   About Me: "aboutme"
   # Author's home: "https://giasemidis.github.io/"
   CV: "https://giasemidis.github.io/docs/GeorgiosGiasemidis-CV.pdf"
-  Publications: "publications"
-  Medium Articles:
+  Publications: "publications"https://www.linkedin.com/events/fromzerotopro-strategiesforasuc7237439177259167744/comments/
+  Webinars:
+    - Advanced Analytics in Euroleague Basketball with Python: "https://www.youtube.com/live/_JLXAQMzA6s?si=ORM8jlZE6GcplYFk"
+    - The Power of Scenario Planning for Businesses & Government: "https://www.linkedin.com/events/thepowerofscenarioplanningforbu7259181829709000705/comments/"
+    - "From Zero to Pro: Strategies for a Successful Career Shift in Data Science": "https://www.linkedin.com/events/fromzerotopro-strategiesforasuc7237439177259167744/comments/"
+  Medium:
     - Demonstrating the “Data Analysis” GPT: "https://g-giasemidis.medium.com/demonstrating-the-data-analysis-gpt-7586f0ed2b76"
     - Chat with and visualise your data — Part II: "https://g-giasemidis.medium.com/chat-with-and-visualise-your-data-part-ii-c01896d4da57"
     - Chat with and visualise your data — Part I: "https://g-giasemidis.medium.com/chat-with-and-visualise-your-data-part-i-40b7272a16d1"
