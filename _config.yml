@@ -8,7 +8,7 @@ remote_theme: daattali/beautiful-jekyll@5.0.0
 navbar-links:
   About Me: "aboutme"
   # Author's home: "https://giasemidis.github.io/"
-  CV: "https://giasemidis.github.io/docs/GeorgiosGiasemidis-CV.pdf"
+  CV: "https://giasemidis.github.io/docs/Georgios-Giasemidis-CV-2025.pdf"
   Publications: "publications"
   Webinars:
     - Advanced Analytics in Euroleague Basketball with Python: "https://www.youtube.com/live/_JLXAQMzA6s?si=ORM8jlZE6GcplYFk"

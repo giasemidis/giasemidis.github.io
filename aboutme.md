@@ -9,7 +9,7 @@ Additionally, I have been involved in *geospatial data science*, where I explore
 
 With a rich background in both line and team management, I excel in stakeholder management, crafting data strategies and solutions, and nurturing teams towards achieving strategic goals. My consultancy expertise in data science projects has been instrumental in shaping innovative solutions across various domains.
 
-I am a member and external collaborator at the [Sports Analytics Group]((https://aueb-analytics.wixsite.com/sports)), Department of Statistics at the Athens University of Economics and Business (AUEB), where I contribute with my work on basketball analytics. I am the author of the popular [Euroleague API](https://pypi.org/project/euroleague-api/) Python package.
+I am a member and scientific collaborator at the [Sports Analytics Group]((https://aueb-analytics.wixsite.com/sports)), Department of Statistics at the Athens University of Economics and Business (AUEB), where I contribute with my work on basketball analytics. I am the author of the popular [Euroleague API](https://pypi.org/project/euroleague-api/) Python package.
 
 I am also deeply committed to mentoring the next generation of data scientists, actively participating on the [MentorCruise](https://mentorcruise.com/mentor/georgiosgiasemidis/) platform, where I maintain a 5-star rating and score in the top 8% of mentors. This role allows me to share my knowledge and experience, guiding young professionals in their career journey. Follow the link below to browse available plans and book a session.
 
