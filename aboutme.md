@@ -2,14 +2,14 @@
 
 ## Data Science Career
 
-As a Lead Data Scientist at [Choreograph](https://www.choreograph.com/), [WPP](https://www.wpp.com/), I bring over a decade of expertise in the field of Data Science and Machine Learning.
+I am a Senior Director of Data Science at [Choreograph](https://www.choreograph.com/), [WPP](https://www.wpp.com/), bringing over a decade of expertise in the field of Data Science and Machine Learning.
 My current focus is on leveraging *Agent Based Models (ABM)* to unravel the complexities of consumer behaviour.
-I am also passionate about *Generative AI innovations and solutions*, particularly in the development of agentic solutions that are reshaping how we interact with our own data sources. I have driven several MVPs and POCs and community engagements.
+I am also passionate about *Generative AI innovations and solutions*, particularly in the development of agentic solutions that are reshaping how we interact with our own data sources. I have driven several MVPs and PoCs and community engagements.
 Additionally, I have been involved in *geospatial data science*, where I explored the intricate patterns of geographical data to derive meaningful insights. My work in this area can be presented at the [Spatial Data Science Conference 2023](https://youtu.be/zKL6cuiOtcY?si=D-MClSFb4x4LEhqE).
 
 With a rich background in both line and team management, I excel in stakeholder management, crafting data strategies and solutions, and nurturing teams towards achieving strategic goals. My consultancy expertise in data science projects has been instrumental in shaping innovative solutions across various domains.
 
-I am a member and scientific collaborator at the [Sports Analytics Group]((https://aueb-analytics.wixsite.com/sports)), Department of Statistics at the Athens University of Economics and Business (AUEB), where I contribute with my work on basketball analytics. I am the author of the popular [Euroleague API](https://pypi.org/project/euroleague-api/) Python package.
+I am a member and scientific collaborator at the [Sports Analytics Group]((https://aueb-analytics.wixsite.com/sports)), Department of Statistics at the Athens University of Economics and Business (AUEB), where I contribute with my work on basketball analytics. I am the author of the popular [Euroleague API](https://pypi.org/project/euroleague-api/) Python package. I have presented my work on basketball analytics at various conferences and wworkshops; this is my presentation at the [Data Science Festival 2025 in London](https://youtu.be/-v004dFa6HE?si=Ln2voOoHxnn6l-Xy).
 
 I am also deeply committed to mentoring the next generation of data scientists, actively participating on the [MentorCruise](https://mentorcruise.com/mentor/georgiosgiasemidis/) platform, where I maintain a 5-star rating and score in the top 8% of mentors. This role allows me to share my knowledge and experience, guiding young professionals in their career journey. Follow the link below to browse available plans and book a session.
 
