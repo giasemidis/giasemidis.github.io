@@ -2,7 +2,7 @@
 
 ## Data Science Career
 
-I am a Senior Director of Data Science at [Choreograph](https://www.choreograph.com/), [WPP](https://www.wpp.com/), bringing over a decade of expertise in the field of Data Science and Machine Learning.
+I am a Senior Director of Data Science at [WPP Open](https://www.wpp.com/en/open), [WPP](https://www.wpp.com/), bringing over a decade of expertise in the field of Data Science and Machine Learning.
 My current focus is on leveraging *Agent Based Models (ABM)* to unravel the complexities of consumer behaviour.
 I am also passionate about *Generative AI innovations and solutions*, particularly in the development of agentic solutions that are reshaping how we interact with our own data sources. I have driven several MVPs and PoCs and community engagements.
 Additionally, I have been involved in *geospatial data science*, where I explored the intricate patterns of geographical data to derive meaningful insights. My work in this area can be presented at the [Spatial Data Science Conference 2023](https://youtu.be/zKL6cuiOtcY?si=D-MClSFb4x4LEhqE).
@@ -16,8 +16,6 @@ I am also deeply committed to mentoring the next generation of data scientists, 
 <a href="https://mentorcruise.com/mentor/georgiosgiasemidis/">
 <img src="https://mentorcruise.com/mentor/georgiosgiasemidis/widget/" loading="lazy" class="md:h-28" style="max-height: 140px" alt="">
 </a>
-
-Previously, I have participated on [KaggleX](https://www.kagglex.org/) mentoriship programme and the [Mentorloop](https://mentorloop.com/) platform in my organisation.
 
 I enjoy giving webinars and sharing the knowledge on the topics of my expertise, see for example:
 
