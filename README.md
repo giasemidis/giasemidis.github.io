@@ -1,7 +1,7 @@
 Hello, welcome to my personal page. Browse around for
 
 * [Personal details](https://giasemidis.github.io/aboutme)
-* [CV](https://giasemidis.github.io/docs/GeorgiosGiasemidis-CV.pdf)
+* [CV](https://giasemidis.github.io/docs/Georgios Giasemidis - CV.pdf)
 * Webinars
 * Blog-posts
 * [Publications](https://giasemidis.github.io/publications)
