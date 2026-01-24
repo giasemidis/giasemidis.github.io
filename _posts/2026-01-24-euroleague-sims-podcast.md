@@ -16,8 +16,14 @@ To make this technical deep dive more accessible, I have generated an AI-hosted 
 
 In this 15-minute episode, our AI hosts, Alex and Sarah, break down the "recipe" for simulating the EuroLeague season. They discuss how we moved beyond simple win/loss predictions to creating a "multiverse" of outcomes.
 
-**Audio File:**
-![Audio](media/euroleague-sims-ai-podcast.m4a)
+<iframe
+  width="100%"
+  height="166"
+  scrolling="no"
+  frameborder="no"
+  allow="autoplay"
+  src="https://soundcloud.com/g-giasemidis/euroleague-simulations-ai-podcast?si=900ef6a1c15847b8bdbbd3e08c33f894&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing">
+</iframe>
 
 **Key Topics Covered:**
 
@@ -32,8 +38,15 @@ In this 15-minute episode, our AI hosts, Alex and Sarah, break down the "recipe"
 
 If you prefer to see full presentation, you can watch the original video below. The podcast above focuses specifically on the **Simulation Methodology** and **Q&A** segment, which runs from timestamp **26:37 to 33:50**.
 
-![You Tube](https://www.youtube.com/watch?v=m9oUu1wHsDM)
-*(Note: Skip to 26:37 for the start of the simulation discussion)*
+<iframe
+  width="100%"
+  height="400"
+  src="https://youtu.be/-v004dFa6HE?si=rNlJCtYmRV7MNF74"
+  title="YouTube: Euroleague Basketball Analytics with Python, Knowledge Graphs and Simulations"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen>
+</iframe>
 
 ### A Note on Democratising Data
 
