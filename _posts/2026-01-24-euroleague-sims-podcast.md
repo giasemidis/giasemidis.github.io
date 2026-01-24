@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The EuroLeague Multiverse - Simulating the Season"
+title: "The EuroLeague Multiverse: Simulating the Season"
 subtitle: A deep dive into the making of the Euroleague Simulations
 tags: [euroleague, basketball, simulations, analytics, podcast]
 readtime: true
@@ -16,20 +16,13 @@ To make this technical deep dive more accessible, I have generated an AI-hosted 
 
 In this 15-minute episode, our AI hosts, Alex and Sarah, break down the "recipe" for simulating the EuroLeague season. They discuss how we moved beyond simple win/loss predictions to creating a "multiverse" of outcomes.
 
-<iframe
-  width="100%"
-  height="166"
-  scrolling="no"
-  frameborder="no"
-  allow="autoplay"
-  src="https://soundcloud.com/g-giasemidis/euroleague-simulations-ai-podcast?si=900ef6a1c15847b8bdbbd3e08c33f894&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing">
-</iframe>
+<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2253573533&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/g-giasemidis" title="G.giasemidis" target="_blank" style="color: #cccccc; text-decoration: none;">G.giasemidis</a> · <a href="https://soundcloud.com/g-giasemidis/euroleague-simulations-ai-podcast" title="A deep dive into the making of the Euroleague Simulations" target="_blank" style="color: #cccccc; text-decoration: none;">A deep dive into the making of the Euroleague Simulations</a></div>
 
 **Key Topics Covered:**
 
-* **The Simulation Recipe:** The three elements required for creating a simulation model
+* **The Simulation Recipe:** The three elements required for creating a simulation model.
 * **The Game Prediction model:** How we combined historical ELO ratings with current Net Ratings to solve the "cold start" problem, include historical team dynamics and capture team current momentum.
-* **The Multiverse** Why we ran **10,000 stochastic iterations** (universes) to smooth out variance and identify the true favourites for the Final Four.
+* **The Multiverse** Why we ran *10,000 stochastic iterations* (universes) to smooth out variance and identify the true favourites for the Final Four.
 * **Q&A** A candid look at why European basketball analytics lags behind the NBA and European football due to expensive, gatekept data.
 
 ***
@@ -38,15 +31,7 @@ In this 15-minute episode, our AI hosts, Alex and Sarah, break down the "recipe"
 
 If you prefer to see full presentation, you can watch the original video below. The podcast above focuses specifically on the **Simulation Methodology** and **Q&A** segment, which runs from timestamp **26:37 to 33:50**.
 
-<iframe
-  width="100%"
-  height="400"
-  src="https://youtu.be/-v004dFa6HE?si=rNlJCtYmRV7MNF74"
-  title="YouTube: Euroleague Basketball Analytics with Python, Knowledge Graphs and Simulations"
-  frameborder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-  allowfullscreen>
-</iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-v004dFa6HE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ### A Note on Democratising Data
 
