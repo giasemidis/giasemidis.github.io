@@ -17,7 +17,7 @@ To make this technical deep dive more accessible, I have generated an AI-hosted 
 In this 15-minute episode, our AI hosts, Alex and Sarah, break down the "recipe" for simulating the EuroLeague season. They discuss how we moved beyond simple win/loss predictions to creating a "multiverse" of outcomes.
 
 **Audio File:**
-![Audio: media/euroleague-sims-ai-podcast.m4a]
+![Audio](media/euroleague-sims-ai-podcast.m4a)
 
 **Key Topics Covered:**
 
