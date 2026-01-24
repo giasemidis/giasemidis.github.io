@@ -8,7 +8,7 @@ social-share: true
 ---
 
 
-Last year, I had the pleasure of presenting at the **Data Science Festival 2025 in London**, where I talked about advanced analytics in European basketball. While the full talk covered a wide range of topics, one specific segment sparked the most debate: the simulation engine used to predict the Final Four.
+Last year, I had the pleasure of presenting at the **Data Science Festival 2025 in London**, where I talked about advanced analytics in European basketball, particularly the Euroleague. While the full talk covered a wide range of topics, one specific segment sparked the most debate: the simulation engine used to predict the Euroleague's Final Four.
 
 To make this technical deep dive more accessible, I have generated an AI-hosted podcast episode using the content from that specific segment.
 
