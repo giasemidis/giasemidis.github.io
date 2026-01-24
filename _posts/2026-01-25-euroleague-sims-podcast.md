@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The EuroLeague Multiverse: Simulating the Season"
+title: "The EuroLeague Multiverse - Simulating the Season"
 subtitle: A deep dive into the making of the Euroleague Simulations
 tags: [euroleague, basketball, simulations, analytics, podcast]
 readtime: true
@@ -8,7 +8,7 @@ social-share: true
 ---
 
 
-Last year, I had the pleasure of presenting at the **Data Science Festival 2025 in London**, where I talked about advanced analytics in European basketball, particularly the Euroleague. While the full talk covered a wide range of topics, one specific segment sparked the most debate: the simulation engine used to predict the Euroleague's Final Four.
+Last year, I had the pleasure of presenting at the [Data Science Festival 2025 in London](https://datasciencefestival.com/session/euroleague-basketball-analytics-with-python-knowledge-graphs-and-simulations/), where I talked about advanced analytics in European basketball, particularly the Euroleague. While the full talk covered a wide range of topics, one specific segment sparked the most debate: the simulation engine used to predict the Euroleague's Final Four.
 
 To make this technical deep dive more accessible, I have generated an AI-hosted podcast episode using the content from that specific segment.
 
@@ -30,7 +30,7 @@ In this 15-minute episode, our AI hosts, Alex and Sarah, break down the "recipe"
 
 ## 📺 Watch the Original Presentation
 
-If you prefer to see the code and the graphs, you can watch the original video below. The podcast above focuses specifically on the **Simulation Methodology** and **Q&A** segment, which runs from timestamp **26:37 to 33:50**.
+If you prefer to see full presentation, you can watch the original video below. The podcast above focuses specifically on the **Simulation Methodology** and **Q&A** segment, which runs from timestamp **26:37 to 33:50**.
 
 ![You Tube](https://www.youtube.com/watch?v=m9oUu1wHsDM)
 *(Note: Skip to 26:37 for the start of the simulation discussion)*
