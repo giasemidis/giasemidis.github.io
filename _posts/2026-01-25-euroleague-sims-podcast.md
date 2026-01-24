@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The EuroLeague Multiverse\: Simulating the Season
+title: "The EuroLeague Multiverse: Simulating the Season"
 subtitle: A deep dive into the making of the Euroleague Simulations
 tags: [euroleague, basketball, simulations, analytics, podcast]
 readtime: true
