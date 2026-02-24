@@ -7,7 +7,7 @@ readtime: true
 social-share: true
 ---
 
-The second episode of my AI generated podcast is focusing on the webinar I hosted for MentorCruise, "The Power of Scenario Planning for Businesses & Government", recording is available on [LinkedIn](https://www.linkedin.com/events/thepowerofscenarioplanningforbu7259181829709000705/theater/).
+The second episode of my AI generated podcast is focusing on the webinar I hosted for MentorCruise, "**The Power of Scenario Planning for Businesses & Government**", recording is available on [LinkedIn](https://www.linkedin.com/events/thepowerofscenarioplanningforbu7259181829709000705/theater/).
 
 In this episode, the (AI-generated) hosts explore how businesses and governments can look beyond traditional predictive modelling by embracing the power of scenario planning. They highlight how typical machine learning relies heavily on historical data, causing it to fail when faced with unpredictable "black swan" events like the COVID-19 pandemic. To navigate these unknowns, the hosts introduce Agent-Based Modelling (ABM)—a framework that simulates interactions between individual agents to explore hundreds of hypothetical futures.
 
