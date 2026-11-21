@@ -2,7 +2,7 @@
 
 ## Data Science & AI Career
 
-I am Head of Data & AI at The Sports Consultancy, which specialises in the commercial side of sport, with over a decade of expertise in Data Science, Machine Learning and AI.
+I am Head of Data & AI at [The Sports Consultancy](https://thesportsconsultancy.com/), which specialises in the commercial side of sport, with over a decade of expertise in Data Science, Machine Learning and AI.
 I lead our data and AI strategy, building our data foundation, pipelines, automations and agentic solutions that make the business more efficient.
 
 I am also co-founder of [GN Basketball Intelligence](https://www.gn-basketball-intelligence.com/) (GN BI), a European basketball analytics company that helps scouts, general managers and coaches make sharper roster decisions with validated, transparent numbers. Our work covers:
