@@ -12,9 +12,11 @@ I am also co-founder of [GN Basketball Intelligence](https://www.gn-basketball-i
 - *Player archetypes*: role "fingerprints" and similarity scores that separate how a player plays from their raw production.
 - *EuroLeague workbench*: lineup, player value, clutch, rotation and possession-quality analytics, including a live win-probability and momentum tracker.
 
+We also built the [Euroleague Advanced API](https://euroleague-advanced-api.eu/), a REST API for advanced statistics on the EuroLeague and EuroCup. Basic stats are free to access, and a subscription unlocks the advanced endpoints, such as clutch stats by game, round or season, and gives faster access to the free data.
+
 We work with clubs of all sizes, including Doxa Lefkadas, where we support team building, player recruitment, and performance and opponent scouting.
 
-Previously, as Senior Director of Data Science at [WPP Open](https://www.wpp.com/en/open), [WPP](https://www.wpp.com/), I leveraged *Agent Based Models (ABM)* to unravel the complexities of consumer behaviour.
+Previously, as Senior Director of Data Science at [WPP](https://www.wpp.com/), I leveraged *Agent Based Models (ABM)* to unravel the complexities of consumer behaviour.
 I also drove several *Generative AI* MVPs, PoCs and community initiatives, focused on agentic solutions that reshape how we interact with our own data sources.
 Additionally, I have been involved in *geospatial data science*, where I explored the intricate patterns of geographical data to derive meaningful insights. I presented my work in this area at the [Spatial Data Science Conference 2023](https://youtu.be/zKL6cuiOtcY?si=D-MClSFb4x4LEhqE).
 
