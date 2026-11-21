@@ -17,18 +17,18 @@ navbar-links:
   Public Speaking:
     - Spatial Data Science Conference 2023: "https://youtu.be/zKL6cuiOtcY?si=D-MClSFb4x4LEhqE"
     - Data Science Festival 2025: "https://youtu.be/-v004dFa6HE?si=Ln2voOoHxnn6l-Xy"
-  Medium:
-    - Demonstrating the “Data Analysis” GPT: "https://g-giasemidis.medium.com/demonstrating-the-data-analysis-gpt-7586f0ed2b76"
-    - Chat with and visualise your data — Part II: "https://g-giasemidis.medium.com/chat-with-and-visualise-your-data-part-ii-c01896d4da57"
-    - Chat with and visualise your data — Part I: "https://g-giasemidis.medium.com/chat-with-and-visualise-your-data-part-i-40b7272a16d1"
-    - Good and Bad Practices and Habits in Data Science: "https://medium.com/@g-giasemidis/good-and-bad-practices-and-habits-in-data-science-dc169830092"
-    - LV forecasting literature review: "https://g-giasemidis.medium.com/lessons-from-a-review-of-low-voltage-load-forecasting-methods-1379627e8f0c"
-    - Euroleague shot charts: "https://g-giasemidis.medium.com/create-euroleague-shot-charts-in-python-7ba4aa574644"
-    - ESPN NBA Fantasy: "https://g-giasemidis.medium.com/nba-fantasy-analytics-with-python-on-epsn-f03f10a60187"
+  # Medium:
+  #   - Demonstrating the “Data Analysis” GPT: "https://g-giasemidis.medium.com/demonstrating-the-data-analysis-gpt-7586f0ed2b76"
+  #   - Chat with and visualise your data — Part II: "https://g-giasemidis.medium.com/chat-with-and-visualise-your-data-part-ii-c01896d4da57"
+  #   - Chat with and visualise your data — Part I: "https://g-giasemidis.medium.com/chat-with-and-visualise-your-data-part-i-40b7272a16d1"
+  #   - Good and Bad Practices and Habits in Data Science: "https://medium.com/@g-giasemidis/good-and-bad-practices-and-habits-in-data-science-dc169830092"
+  #   - LV forecasting literature review: "https://g-giasemidis.medium.com/lessons-from-a-review-of-low-voltage-load-forecasting-methods-1379627e8f0c"
+  #   - Euroleague shot charts: "https://g-giasemidis.medium.com/create-euroleague-shot-charts-in-python-7ba4aa574644"
+  #   - ESPN NBA Fantasy: "https://g-giasemidis.medium.com/nba-fantasy-analytics-with-python-on-epsn-f03f10a60187"
   "\U0001F3C0 Apps":
+    - Euroleague Simulations: "https://euroleague-sims.gn-basketball-intelligence.com/"
     - ESPN NBA Fantasy (Post-round): "https://espn-nba-fantasy-post-round-analysis.streamlit.app/"
     - ESPN NBA Fantasy (H2H pre-round): "https://espn-nba-fantasy-head-to-head-analysis.streamlit.app/"
-    - ChatGPT Basketball Assistant: "https://giasemidis-openai-basketball-assistant-srcmain-jcc4xt.streamlit.app/"
   Support: "https://buymeacoffee.com/georgios.giasemidis"
 
 # avatar: photos/lego-scientist.jpg
