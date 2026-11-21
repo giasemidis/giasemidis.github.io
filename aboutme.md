@@ -1,6 +1,6 @@
   <!--  -->
 
-## Data Science Career
+## Data Science & AI Career
 
 I am Head of Data & AI at The Sports Consultancy, which specialises in the commercial side of sport, with over a decade of expertise in Data Science, Machine Learning and AI.
 I lead our data and AI strategy, building our data foundation, pipelines, automations and agentic solutions that make the business more efficient.
